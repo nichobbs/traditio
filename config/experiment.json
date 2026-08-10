@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "bottleneck": {
+    "sampleFraction": 0.4,
+    "maxTrainingTokens": 4000
+  },
+  "model": "claude-haiku-4-5-20251001",
+  "maxOutputTokens": 8000,
+  "temperature": 1.0
+}

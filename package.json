@@ -1,0 +1,35 @@
+{
+  "name": "traditio",
+  "version": "0.1.0",
+  "description": "Iterated language learning experiment with LLM learners",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "generation": "node dist/cli.js",
+    "report": "node dist/report.js",
+    "clean": "rm -rf dist corpus/gen-??? corpus/gen-????",
+    "pregeneration": "npm run build"
+  },
+  "keywords": [
+    "language",
+    "learning",
+    "llm",
+    "experiment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
