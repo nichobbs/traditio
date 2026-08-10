@@ -1,1 +1,149 @@
-# traditio
+# Traditio: Iterated Language Learning Experiment
+
+An experiment measuring structural change in an artificial language transmitted across generations of stateless LLM learners.
+
+## Concept
+
+Each generation, a fresh LLM instance observes a bottlenecked sample of form-meaning pairs from the current language, then produces forms for the entire meaning space. Its output becomes the next generation's input. By measuring compositionality, transmission fidelity, and lexical properties across generations, we track how language structure emerges and evolves under information-bottleneck constraints.
+
+## Meaning Space
+
+The experiment covers 200 atomic meanings, exhaustively enumerated:
+- **Agents**: wolf, bird, child, stone, river (5)
+- **Actions**: sees, chases, eats, fears, finds (5)
+- **Patients**: same as agents, excluding agent == patient (4)
+- **Tense**: past, nonpast (2)
+
+Total: 5 × 5 × 4 × 2 = 200 meanings.
+
+Each meaning is represented as JSON with a stable `id`:
+```json
+{"id": "m042", "agent": "wolf", "action": "chases", "patient": "bird", "tense": "past"}
+```
+
+## Seed Language
+
+Generation 0 is holistic and unstructured. Forms are random CV syllables (2-4 syllables, consonants from {p, t, k, m, n, s, l, w, j, h}, vowels from {a, e, i, o, u}), seeded for reproducibility.
+
+## Usage
+
+### Setup
+
+```bash
+npm install
+npm run build
+```
+
+### Run a Generation
+
+```bash
+npm run generation
+```
+
+This:
+1. Loads the latest language (or generates the seed language if none exists)
+2. Samples `sampleFraction` of meanings as training pairs
+3. Renders the learner prompt with the training sample
+4. Calls Claude via the Anthropic API (`ANTHROPIC_API_KEY` environment variable)
+5. Validates and parses the response
+6. Computes metrics (compositionality, transmission fidelity, compression)
+7. Writes `corpus/gen-NNN/` with language, metrics, and metadata
+8. Commits to git
+
+### Dry Run
+
+```bash
+npm run generation -- --dry-run
+```
+
+Renders the prompt and exits without calling the API or modifying state.
+
+### View Report
+
+```bash
+npm run report
+```
+
+Prints a table of headline metrics across all generations and saves `metrics/timeseries.json`.
+
+## Directory Layout
+
+```
+config/experiment.json              # All configuration knobs
+semantics/meanings.json             # Pre-generated meaning space
+corpus/
+  gen-000/
+    language.json                   # Current language (200 form-meaning pairs)
+    training-sample.json            # Pairs shown to the learner
+    raw-response.txt                # Untouched LLM response
+    metrics.json                    # Computed metrics
+    meta.json                       # Model, timestamp, hashes
+  gen-001/
+  ...
+prompts/learner-template.md         # Template prompt (runtime-interpolated)
+src/                                # TypeScript source
+metrics/
+  timeseries.json                   # Aggregated metrics (created by npm run report)
+```
+
+## Config (config/experiment.json)
+
+- `seed`: RNG seed for reproducible seed language
+- `bottleneck.sampleFraction`: Fraction of meanings shown as training pairs (default 0.4)
+- `bottleneck.maxTrainingTokens`: Hard token limit on training sample (default 4000)
+- `model`: Claude model ID (default `claude-haiku-4-5-20251001`)
+- `maxOutputTokens`: Max tokens in learner response (default 8000)
+- `temperature`: Sampling temperature (default 1.0)
+
+## Metrics
+
+### Transmission Fidelity
+
+Mean normalized Levenshtein distance between current and previous generation's forms, plus exact-match rate. Reported overall and separately for in-sample (meanings shown in training) vs. held-out meanings.
+
+### Compositionality
+
+Pearson correlation between semantic distance (Hamming over agent/action/patient/tense) and form distance (normalized Levenshtein) across all meaning pairs. Higher values indicate structure is preserved.
+
+### Compressibility
+
+Ratio of gzipped form bytes to total form bytes. Lower indicates more regularities.
+
+### Lexicon Stats
+
+- Unique form count (synonymy / ambiguity)
+- Mean form length
+- Character bigram entropy
+
+## Tests
+
+```bash
+npm run test
+```
+
+Covers:
+- Meaning space generation stability and correctness
+- Seed language reproducibility
+- Sampling respects fraction and token cap
+- Response parsing (fences, whitespace, validation)
+- Metrics against hand-computed fixtures
+
+## Design Notes
+
+- **Strict TypeScript**: No `any`, no classes where functions suffice.
+- **Minimal dependencies**: `@anthropic-ai/sdk` for API calls, `zod` for validation, vitest for tests.
+- **Stateless learner**: Each generation sees only form-meaning pairs, not explanations or feedback. No memory across generations.
+- **Deterministic by default**: Seeded RNG ensures reproducible seed language and sampling. Model temperature can be tuned.
+- **Fail-safe validation**: If parsing fails, retry once with a correction note. If it fails again, abort without committing.
+
+## Running a Small Experiment
+
+```bash
+npm run build
+npm run generation                   # gen-000 (seed)
+npm run generation                   # gen-001 (learner observes 40% of gen-000)
+npm run generation                   # gen-002
+npm run report
+```
+
+Check `metrics/timeseries.json` for the trajectory.
