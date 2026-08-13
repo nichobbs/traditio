@@ -3,7 +3,7 @@ name: Run Language Generation
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: '0 12 * * *'  # Daily at 12:00 UTC
+    - cron: '0 */8 * * *'  # Every 8 hours (00:00, 08:00, 16:00 UTC)
 
 permissions:
   contents: write
