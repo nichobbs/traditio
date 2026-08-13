@@ -1,13 +1,7 @@
 name: Run Language Generation
 
 on:
-  workflow_dispatch:
-    inputs:
-      generations:
-        description: 'Number of generations to run'
-        required: false
-        default: '1'
-        type: string
+  workflow_dispatch: {}
   schedule:
     - cron: '0 12 * * *'  # Daily at 12:00 UTC
 
@@ -17,53 +11,71 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    strategy:
-      matrix:
-        node-version: ['20.x']
+    timeout-minutes: 15
 
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '20.x'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Claude Code CLI
-        run: npm install -g @anthropic-ai/claude-code
-
       - name: Build
         run: npm run build
 
-      - name: Run generations
-        env:
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          NODE_OPTIONS: '--dns-result-order=ipv4first'
+      - name: Configure git identity
         run: |
-          GENS=${{ github.event.inputs.generations || 1 }}
-          for i in $(seq 1 $GENS); do
-            echo "Running generation $i..."
-            npm run generation
-          done
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Prepare generation
+        id: prepare
+        run: node dist/cli.js --prepare
+
+      - name: Read rendered prompt
+        if: steps.prepare.outputs.needs_llm == 'true'
+        id: read_prompt
+        run: |
+          {
+            echo 'content<<PROMPT_EOF_MARKER'
+            cat "corpus/${{ steps.prepare.outputs.gen_dir }}/prompt.txt"
+            echo 'PROMPT_EOF_MARKER'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Call Claude (subscription auth)
+        if: steps.prepare.outputs.needs_llm == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: "--model ${{ steps.prepare.outputs.model }} --allowedTools \"Write\""
+          prompt: |
+            ${{ steps.read_prompt.outputs.content }}
+
+            ---
+            You are acting as an automation step, not a coding assistant. Write your response to the task above (and ONLY that response - the raw JSON array, no markdown fences, no commentary, no explanation) to this exact file path in the repository: corpus/${{ steps.prepare.outputs.gen_dir }}/raw-response.txt
+
+            Do not modify any other files. Do not create a git commit.
+
+      - name: Collect generation
+        if: steps.prepare.outputs.needs_llm == 'true'
+        run: node dist/cli.js --collect ${{ steps.prepare.outputs.gen_number }}
 
       - name: Generate report
         run: npm run report
 
-      - name: Commit and push results
+      - name: Commit report
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add corpus/ metrics/
+          git add metrics/
           if ! git diff --quiet --cached; then
-            git commit -m "ci: auto-generated language evolution $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-            git push
-          else
-            echo "No changes to commit"
+            git commit -m "ci: update metrics timeseries"
           fi
+
+      - name: Push
+        run: git push

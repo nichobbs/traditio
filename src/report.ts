@@ -60,25 +60,24 @@ async function main(): Promise<void> {
   const timeSeries = await buildTimeSeries();
 
   if (timeSeries.length === 0) {
-    console.log('No generations found.');
-    return;
+    console.log('No generations with metrics found (only the seed generation may exist).');
+  } else {
+    console.log('');
+    console.log('Generation | Compositionality | Transmission Fidelity | Compression | Unique Forms');
+    console.log('-'.repeat(95));
+
+    for (const entry of timeSeries) {
+      const genStr = String(entry.generation).padStart(3, ' ');
+      const compStr = entry.compositionality.toFixed(4).padStart(16, ' ');
+      const tranStr = entry.transmissionFidelityOverall.toFixed(4).padStart(20, ' ');
+      const compRatioStr = entry.compressionRatio.toFixed(4).padStart(11, ' ');
+      const uniqueStr = String(entry.uniqueForms).padStart(12, ' ');
+
+      console.log(`${genStr}${compStr}${tranStr}${compRatioStr}${uniqueStr}`);
+    }
+
+    console.log('');
   }
-
-  console.log('');
-  console.log('Generation | Compositionality | Transmission Fidelity | Compression | Unique Forms');
-  console.log('-'.repeat(95));
-
-  for (const entry of timeSeries) {
-    const genStr = String(entry.generation).padStart(3, ' ');
-    const compStr = entry.compositionality.toFixed(4).padStart(16, ' ');
-    const tranStr = entry.transmissionFidelityOverall.toFixed(4).padStart(20, ' ');
-    const compRatioStr = entry.compressionRatio.toFixed(4).padStart(11, ' ');
-    const uniqueStr = String(entry.uniqueForms).padStart(12, ' ');
-
-    console.log(`${genStr}${compStr}${tranStr}${compRatioStr}${uniqueStr}`);
-  }
-
-  console.log('');
 
   const timeSeriesPath = path.resolve(process.cwd(), 'metrics/timeseries.json');
   await fs.mkdir(path.dirname(timeSeriesPath), { recursive: true });
