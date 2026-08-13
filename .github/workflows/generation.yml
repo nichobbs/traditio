@@ -36,12 +36,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
       - name: Build
         run: npm run build
 
       - name: Run generations
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           NODE_OPTIONS: '--dns-result-order=ipv4first'
         run: |
           GENS=${{ github.event.inputs.generations || 1 }}

@@ -1,5 +1,11 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { execFile } from 'child_process';
+import { promisify } from 'util';
 import type { ApiClient, ApiConfig } from './types.js';
+
+const execFileAsync = promisify(execFile);
+const LEARNER_SYSTEM_PROMPT =
+  'You are a participant in a language learning task. Follow the instructions exactly.';
 
 // Valid HTTP header values are restricted to \t and \x20-\xff (see node-fetch's validateValue).
 // Report where an offending character is, without ever logging the key itself.
@@ -36,7 +42,7 @@ export class AnthropicClient implements ApiClient {
       model: config.model,
       max_tokens: config.maxOutputTokens,
       temperature: config.temperature,
-      system: 'You are a participant in a language learning task. Follow the instructions exactly.',
+      system: LEARNER_SYSTEM_PROMPT,
       messages: [
         {
           role: 'user',
@@ -54,6 +60,41 @@ export class AnthropicClient implements ApiClient {
   }
 }
 
+// Uses the Claude Code CLI in headless mode, authenticated via a
+// CLAUDE_CODE_OAUTH_TOKEN (from `claude setup-token`) so calls are billed
+// against a Claude Pro/Max subscription instead of metered API usage.
+export class ClaudeCliClient implements ApiClient {
+  async callLearner(prompt: string, config: ApiConfig): Promise<string> {
+    const { stdout } = await execFileAsync(
+      'claude',
+      [
+        '--bare',
+        '-p',
+        prompt,
+        '--model',
+        config.model,
+        '--output-format',
+        'json',
+        '--system-prompt',
+        LEARNER_SYSTEM_PROMPT,
+        '--permission-mode',
+        'dontAsk',
+      ],
+      { maxBuffer: 10 * 1024 * 1024 }
+    );
+
+    const parsed = JSON.parse(stdout);
+    if (typeof parsed.result !== 'string') {
+      throw new Error('Unexpected claude CLI output: missing result field');
+    }
+
+    return parsed.result;
+  }
+}
+
 export function createApiClient(apiKey?: string): ApiClient {
+  if (process.env.CLAUDE_CODE_OAUTH_TOKEN) {
+    return new ClaudeCliClient();
+  }
   return new AnthropicClient(apiKey);
 }
