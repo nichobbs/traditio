@@ -45,7 +45,7 @@ jobs:
         run: |
           {
             echo 'content<<PROMPT_EOF_MARKER'
-            cat "corpus/${{ steps.prepare.outputs.gen_dir }}/prompt.txt"
+            printf '%s\n' "$(cat "corpus/${{ steps.prepare.outputs.gen_dir }}/prompt.txt")"
             echo 'PROMPT_EOF_MARKER'
           } >> "$GITHUB_OUTPUT"
 
