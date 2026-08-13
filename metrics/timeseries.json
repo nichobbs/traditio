@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "generation": 1,
+    "compositionality": 0.25591796833992103,
+    "transmissionFidelityOverall": 0.5148214285714283,
+    "compressionRatio": 0.4619607843137255,
+    "uniqueForms": 197
+  }
+]
