@@ -1,9 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { execFile } from 'child_process';
-import { promisify } from 'util';
+import { spawn } from 'child_process';
 import type { ApiClient, ApiConfig } from './types.js';
 
-const execFileAsync = promisify(execFile);
 const LEARNER_SYSTEM_PROMPT =
   'You are a participant in a language learning task. Follow the instructions exactly.';
 
@@ -63,14 +61,14 @@ export class AnthropicClient implements ApiClient {
 // Uses the Claude Code CLI in headless mode, authenticated via a
 // CLAUDE_CODE_OAUTH_TOKEN (from `claude setup-token`) so calls are billed
 // against a Claude Pro/Max subscription instead of metered API usage.
+// The prompt is piped via stdin rather than passed as a positional argument
+// to `-p`, since -p greedily consumes any trailing argv entries (including
+// subsequent flags) into the prompt value if given one inline.
 export class ClaudeCliClient implements ApiClient {
   async callLearner(prompt: string, config: ApiConfig): Promise<string> {
-    const { stdout } = await execFileAsync(
-      'claude',
-      [
+    return new Promise((resolve, reject) => {
+      const child = spawn('claude', [
         '--bare',
-        '-p',
-        prompt,
         '--model',
         config.model,
         '--output-format',
@@ -79,16 +77,39 @@ export class ClaudeCliClient implements ApiClient {
         LEARNER_SYSTEM_PROMPT,
         '--permission-mode',
         'dontAsk',
-      ],
-      { maxBuffer: 10 * 1024 * 1024 }
-    );
+        '-p',
+      ]);
 
-    const parsed = JSON.parse(stdout);
-    if (typeof parsed.result !== 'string') {
-      throw new Error('Unexpected claude CLI output: missing result field');
-    }
+      let stdout = '';
+      let stderr = '';
+      child.stdout.on('data', (chunk) => {
+        stdout += chunk;
+      });
+      child.stderr.on('data', (chunk) => {
+        stderr += chunk;
+      });
 
-    return parsed.result;
+      child.on('error', reject);
+      child.on('close', (code) => {
+        if (code !== 0) {
+          reject(new Error(`claude CLI exited with code ${code}: ${stderr || stdout}`));
+          return;
+        }
+        try {
+          const parsed = JSON.parse(stdout);
+          if (typeof parsed.result !== 'string') {
+            reject(new Error(`Unexpected claude CLI output: missing result field: ${stdout.slice(0, 500)}`));
+            return;
+          }
+          resolve(parsed.result);
+        } catch {
+          reject(new Error(`Failed to parse claude CLI output as JSON: ${stdout.slice(0, 500)}`));
+        }
+      });
+
+      child.stdin.write(prompt);
+      child.stdin.end();
+    });
   }
 }
 
