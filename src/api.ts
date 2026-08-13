@@ -61,6 +61,8 @@ export class AnthropicClient implements ApiClient {
 // Uses the Claude Code CLI in headless mode, authenticated via a
 // CLAUDE_CODE_OAUTH_TOKEN (from `claude setup-token`) so calls are billed
 // against a Claude Pro/Max subscription instead of metered API usage.
+// --bare is deliberately omitted: bare mode only supports API-key auth and
+// ignores CLAUDE_CODE_OAUTH_TOKEN entirely, which surfaces as "Not logged in".
 // The prompt is piped via stdin rather than passed as a positional argument
 // to `-p`, since -p greedily consumes any trailing argv entries (including
 // subsequent flags) into the prompt value if given one inline.
@@ -68,7 +70,6 @@ export class ClaudeCliClient implements ApiClient {
   async callLearner(prompt: string, config: ApiConfig): Promise<string> {
     return new Promise((resolve, reject) => {
       const child = spawn('claude', [
-        '--bare',
         '--model',
         config.model,
         '--output-format',
