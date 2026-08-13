@@ -21,7 +21,10 @@ export class AnthropicClient implements ApiClient {
   private client: Anthropic;
 
   constructor(apiKey?: string) {
-    const resolvedKey = (apiKey ?? process.env.ANTHROPIC_API_KEY)?.trim();
+    // A raw API key can never legitimately contain CR/LF - strip them wherever
+    // they appear (not just at the edges) to tolerate secrets pasted with an
+    // embedded line break, then trim any remaining edge whitespace.
+    const resolvedKey = (apiKey ?? process.env.ANTHROPIC_API_KEY)?.replace(/[\r\n]/g, '').trim();
     if (resolvedKey) {
       diagnoseHeaderValue(resolvedKey);
     }
