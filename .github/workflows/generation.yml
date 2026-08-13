@@ -56,11 +56,14 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           claude_args: "--model ${{ steps.prepare.outputs.model }} --allowedTools \"Write\""
+          show_full_output: true
           prompt: |
             ${{ steps.read_prompt.outputs.content }}
 
             ---
-            You are acting as an automation step, not a coding assistant. Write your response to the task above (and ONLY that response - the raw JSON array, no markdown fences, no commentary, no explanation) to this exact file path in the repository: corpus/${{ steps.prepare.outputs.gen_dir }}/raw-response.txt
+            You are acting as an automation step, not a coding assistant, and you have exactly one job: call the Write tool to create the file at this exact path with your JSON array response as its entire content: corpus/${{ steps.prepare.outputs.gen_dir }}/raw-response.txt
+
+            You MUST call the Write tool. Do not print, describe, or summarize the response in your final message - the ONLY acceptable output from you is a Write tool call that creates this file. A response that just states the array in text instead of writing it to that file is a failure. The file's content must be ONLY the raw JSON array - no markdown fences, no commentary, no explanation.
 
             Do not modify any other files. Do not create a git commit.
 
