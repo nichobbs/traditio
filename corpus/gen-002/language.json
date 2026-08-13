@@ -1,0 +1,804 @@
+{
+  "pairs": [
+    {
+      "meaningId": "m000",
+      "form": "towicha"
+    },
+    {
+      "meaningId": "m001",
+      "form": "towichun"
+    },
+    {
+      "meaningId": "m002",
+      "form": "towemela"
+    },
+    {
+      "meaningId": "m003",
+      "form": "towemelan"
+    },
+    {
+      "meaningId": "m004",
+      "form": "tosela"
+    },
+    {
+      "meaningId": "m005",
+      "form": "walesun"
+    },
+    {
+      "meaningId": "m006",
+      "form": "tohelapi"
+    },
+    {
+      "meaningId": "m007",
+      "form": "tohelapiun"
+    },
+    {
+      "meaningId": "m008",
+      "form": "walito"
+    },
+    {
+      "meaningId": "m009",
+      "form": "liti"
+    },
+    {
+      "meaningId": "m010",
+      "form": "wohuta"
+    },
+    {
+      "meaningId": "m011",
+      "form": "wohutu"
+    },
+    {
+      "meaningId": "m012",
+      "form": "wositu"
+    },
+    {
+      "meaningId": "m013",
+      "form": "kisijune"
+    },
+    {
+      "meaningId": "m014",
+      "form": "walimeto"
+    },
+    {
+      "meaningId": "m015",
+      "form": "walimeun"
+    },
+    {
+      "meaningId": "m016",
+      "form": "waleto"
+    },
+    {
+      "meaningId": "m017",
+      "form": "waletun"
+    },
+    {
+      "meaningId": "m018",
+      "form": "wameku"
+    },
+    {
+      "meaningId": "m019",
+      "form": "wamekun"
+    },
+    {
+      "meaningId": "m020",
+      "form": "waseti"
+    },
+    {
+      "meaningId": "m021",
+      "form": "wasetun"
+    },
+    {
+      "meaningId": "m022",
+      "form": "waseteme"
+    },
+    {
+      "meaningId": "m023",
+      "form": "wasetemun"
+    },
+    {
+      "meaningId": "m024",
+      "form": "walinu"
+    },
+    {
+      "meaningId": "m025",
+      "form": "wanitu"
+    },
+    {
+      "meaningId": "m026",
+      "form": "wamelo"
+    },
+    {
+      "meaningId": "m027",
+      "form": "wamelun"
+    },
+    {
+      "meaningId": "m028",
+      "form": "waseno"
+    },
+    {
+      "meaningId": "m029",
+      "form": "waseun"
+    },
+    {
+      "meaningId": "m030",
+      "form": "wanemolo"
+    },
+    {
+      "meaningId": "m031",
+      "form": "wanemetun"
+    },
+    {
+      "meaningId": "m032",
+      "form": "wake"
+    },
+    {
+      "meaningId": "m033",
+      "form": "wakun"
+    },
+    {
+      "meaningId": "m034",
+      "form": "womelu"
+    },
+    {
+      "meaningId": "m035",
+      "form": "womelun"
+    },
+    {
+      "meaningId": "m036",
+      "form": "waseno"
+    },
+    {
+      "meaningId": "m037",
+      "form": "walisun"
+    },
+    {
+      "meaningId": "m038",
+      "form": "waleme"
+    },
+    {
+      "meaningId": "m039",
+      "form": "walemun"
+    },
+    {
+      "meaningId": "m040",
+      "form": "wuti"
+    },
+    {
+      "meaningId": "m041",
+      "form": "wuti"
+    },
+    {
+      "meaningId": "m042",
+      "form": "bawasi"
+    },
+    {
+      "meaningId": "m043",
+      "form": "bawasun"
+    },
+    {
+      "meaningId": "m044",
+      "form": "sinopopu"
+    },
+    {
+      "meaningId": "m045",
+      "form": "sinopun"
+    },
+    {
+      "meaningId": "m046",
+      "form": "baseme"
+    },
+    {
+      "meaningId": "m047",
+      "form": "basemun"
+    },
+    {
+      "meaningId": "m048",
+      "form": "bachawa"
+    },
+    {
+      "meaningId": "m049",
+      "form": "bachawun"
+    },
+    {
+      "meaningId": "m050",
+      "form": "bochato"
+    },
+    {
+      "meaningId": "m051",
+      "form": "bochatun"
+    },
+    {
+      "meaningId": "m052",
+      "form": "bositi"
+    },
+    {
+      "meaningId": "m053",
+      "form": "bositun"
+    },
+    {
+      "meaningId": "m054",
+      "form": "bayemeto"
+    },
+    {
+      "meaningId": "m055",
+      "form": "jenesmu"
+    },
+    {
+      "meaningId": "m056",
+      "form": "baseto"
+    },
+    {
+      "meaningId": "m057",
+      "form": "basetun"
+    },
+    {
+      "meaningId": "m058",
+      "form": "bashuta"
+    },
+    {
+      "meaningId": "m059",
+      "form": "bashutun"
+    },
+    {
+      "meaningId": "m060",
+      "form": "basiti"
+    },
+    {
+      "meaningId": "m061",
+      "form": "bositun"
+    },
+    {
+      "meaningId": "m062",
+      "form": "baseme"
+    },
+    {
+      "meaningId": "m063",
+      "form": "basemun"
+    },
+    {
+      "meaningId": "m064",
+      "form": "banelu"
+    },
+    {
+      "meaningId": "m065",
+      "form": "nosanuso"
+    },
+    {
+      "meaningId": "m066",
+      "form": "banichi"
+    },
+    {
+      "meaningId": "m067",
+      "form": "banichun"
+    },
+    {
+      "meaningId": "m068",
+      "form": "banesi"
+    },
+    {
+      "meaningId": "m069",
+      "form": "banesun"
+    },
+    {
+      "meaningId": "m070",
+      "form": "baneme"
+    },
+    {
+      "meaningId": "m071",
+      "form": "mipi"
+    },
+    {
+      "meaningId": "m072",
+      "form": "bafinelu"
+    },
+    {
+      "meaningId": "m073",
+      "form": "bafinun"
+    },
+    {
+      "meaningId": "m074",
+      "form": "bashilu"
+    },
+    {
+      "meaningId": "m075",
+      "form": "bashilun"
+    },
+    {
+      "meaningId": "m076",
+      "form": "sijahaja"
+    },
+    {
+      "meaningId": "m077",
+      "form": "sijahajun"
+    },
+    {
+      "meaningId": "m078",
+      "form": "balime"
+    },
+    {
+      "meaningId": "m079",
+      "form": "tukalemo"
+    },
+    {
+      "meaningId": "m080",
+      "form": "tiwelu"
+    },
+    {
+      "meaningId": "m081",
+      "form": "tikalun"
+    },
+    {
+      "meaningId": "m082",
+      "form": "lipi"
+    },
+    {
+      "meaningId": "m083",
+      "form": "kihetuki"
+    },
+    {
+      "meaningId": "m084",
+      "form": "tiseji"
+    },
+    {
+      "meaningId": "m085",
+      "form": "lesiholo"
+    },
+    {
+      "meaningId": "m086",
+      "form": "tiweme"
+    },
+    {
+      "meaningId": "m087",
+      "form": "tewinu"
+    },
+    {
+      "meaningId": "m088",
+      "form": "kimelu"
+    },
+    {
+      "meaningId": "m089",
+      "form": "kimelun"
+    },
+    {
+      "meaningId": "m090",
+      "form": "luhu"
+    },
+    {
+      "meaningId": "m091",
+      "form": "luhunu"
+    },
+    {
+      "meaningId": "m092",
+      "form": "jupenupe"
+    },
+    {
+      "meaningId": "m093",
+      "form": "jupunun"
+    },
+    {
+      "meaningId": "m094",
+      "form": "chumate"
+    },
+    {
+      "meaningId": "m095",
+      "form": "luwapi"
+    },
+    {
+      "meaningId": "m096",
+      "form": "chiwelu"
+    },
+    {
+      "meaningId": "m097",
+      "form": "chiwelun"
+    },
+    {
+      "meaningId": "m098",
+      "form": "chebito"
+    },
+    {
+      "meaningId": "m099",
+      "form": "chebitun"
+    },
+    {
+      "meaningId": "m100",
+      "form": "chiseti"
+    },
+    {
+      "meaningId": "m101",
+      "form": "chiseun"
+    },
+    {
+      "meaningId": "m102",
+      "form": "chimelo"
+    },
+    {
+      "meaningId": "m103",
+      "form": "chimelun"
+    },
+    {
+      "meaningId": "m104",
+      "form": "kimelun"
+    },
+    {
+      "meaningId": "m105",
+      "form": "hunamuno"
+    },
+    {
+      "meaningId": "m106",
+      "form": "chaniso"
+    },
+    {
+      "meaningId": "m107",
+      "form": "hinaliwa"
+    },
+    {
+      "meaningId": "m108",
+      "form": "timeso"
+    },
+    {
+      "meaningId": "m109",
+      "form": "timesun"
+    },
+    {
+      "meaningId": "m110",
+      "form": "timelun"
+    },
+    {
+      "meaningId": "m111",
+      "form": "timelu"
+    },
+    {
+      "meaningId": "m112",
+      "form": "jinelu"
+    },
+    {
+      "meaningId": "m113",
+      "form": "janute"
+    },
+    {
+      "meaningId": "m114",
+      "form": "jilicho"
+    },
+    {
+      "meaningId": "m115",
+      "form": "mesatune"
+    },
+    {
+      "meaningId": "m116",
+      "form": "chisoto"
+    },
+    {
+      "meaningId": "m117",
+      "form": "chisotun"
+    },
+    {
+      "meaningId": "m118",
+      "form": "jilemelo"
+    },
+    {
+      "meaningId": "m119",
+      "form": "chimenu"
+    },
+    {
+      "meaningId": "m120",
+      "form": "sowelu"
+    },
+    {
+      "meaningId": "m121",
+      "form": "sowelun"
+    },
+    {
+      "meaningId": "m122",
+      "form": "sobila"
+    },
+    {
+      "meaningId": "m123",
+      "form": "sobilun"
+    },
+    {
+      "meaningId": "m124",
+      "form": "sometelu"
+    },
+    {
+      "meaningId": "m125",
+      "form": "howenu"
+    },
+    {
+      "meaningId": "m126",
+      "form": "somelun"
+    },
+    {
+      "meaningId": "m127",
+      "form": "somelu"
+    },
+    {
+      "meaningId": "m128",
+      "form": "sochato"
+    },
+    {
+      "meaningId": "m129",
+      "form": "sochatun"
+    },
+    {
+      "meaningId": "m130",
+      "form": "sobichi"
+    },
+    {
+      "meaningId": "m131",
+      "form": "sobichun"
+    },
+    {
+      "meaningId": "m132",
+      "form": "somelu"
+    },
+    {
+      "meaningId": "m133",
+      "form": "somelun"
+    },
+    {
+      "meaningId": "m134",
+      "form": "josiwa"
+    },
+    {
+      "meaningId": "m135",
+      "form": "puwata"
+    },
+    {
+      "meaningId": "m136",
+      "form": "mowu"
+    },
+    {
+      "meaningId": "m137",
+      "form": "mahe"
+    },
+    {
+      "meaningId": "m138",
+      "form": "sibili"
+    },
+    {
+      "meaningId": "m139",
+      "form": "manuhun"
+    },
+    {
+      "meaningId": "m140",
+      "form": "somelun"
+    },
+    {
+      "meaningId": "m141",
+      "form": "sotun"
+    },
+    {
+      "meaningId": "m142",
+      "form": "sorimelun"
+    },
+    {
+      "meaningId": "m143",
+      "form": "liwo"
+    },
+    {
+      "meaningId": "m144",
+      "form": "solelu"
+    },
+    {
+      "meaningId": "m145",
+      "form": "solelun"
+    },
+    {
+      "meaningId": "m146",
+      "form": "sobiso"
+    },
+    {
+      "meaningId": "m147",
+      "form": "jojipu"
+    },
+    {
+      "meaningId": "m148",
+      "form": "sochiso"
+    },
+    {
+      "meaningId": "m149",
+      "form": "sochisun"
+    },
+    {
+      "meaningId": "m150",
+      "form": "somelu"
+    },
+    {
+      "meaningId": "m151",
+      "form": "jalisawi"
+    },
+    {
+      "meaningId": "m152",
+      "form": "sipelu"
+    },
+    {
+      "meaningId": "m153",
+      "form": "sipunemo"
+    },
+    {
+      "meaningId": "m154",
+      "form": "sibilu"
+    },
+    {
+      "meaningId": "m155",
+      "form": "sibilun"
+    },
+    {
+      "meaningId": "m156",
+      "form": "hulawu"
+    },
+    {
+      "meaningId": "m157",
+      "form": "hulawun"
+    },
+    {
+      "meaningId": "m158",
+      "form": "simelun"
+    },
+    {
+      "meaningId": "m159",
+      "form": "lewumu"
+    },
+    {
+      "meaningId": "m160",
+      "form": "ritalo"
+    },
+    {
+      "meaningId": "m161",
+      "form": "ritalun"
+    },
+    {
+      "meaningId": "m162",
+      "form": "lawa"
+    },
+    {
+      "meaningId": "m163",
+      "form": "lawun"
+    },
+    {
+      "meaningId": "m164",
+      "form": "ritome"
+    },
+    {
+      "meaningId": "m165",
+      "form": "ritomun"
+    },
+    {
+      "meaningId": "m166",
+      "form": "riselee"
+    },
+    {
+      "meaningId": "m167",
+      "form": "riselun"
+    },
+    {
+      "meaningId": "m168",
+      "form": "rimelu"
+    },
+    {
+      "meaningId": "m169",
+      "form": "rimelun"
+    },
+    {
+      "meaningId": "m170",
+      "form": "ribila"
+    },
+    {
+      "meaningId": "m171",
+      "form": "ribilun"
+    },
+    {
+      "meaningId": "m172",
+      "form": "rimecho"
+    },
+    {
+      "meaningId": "m173",
+      "form": "rimechun"
+    },
+    {
+      "meaningId": "m174",
+      "form": "somu"
+    },
+    {
+      "meaningId": "m175",
+      "form": "lune"
+    },
+    {
+      "meaningId": "m176",
+      "form": "rubelu"
+    },
+    {
+      "meaningId": "m177",
+      "form": "rubelun"
+    },
+    {
+      "meaningId": "m178",
+      "form": "rubito"
+    },
+    {
+      "meaningId": "m179",
+      "form": "rubitun"
+    },
+    {
+      "meaningId": "m180",
+      "form": "rumecho"
+    },
+    {
+      "meaningId": "m181",
+      "form": "rumechun"
+    },
+    {
+      "meaningId": "m182",
+      "form": "lalihana"
+    },
+    {
+      "meaningId": "m183",
+      "form": "lalihana"
+    },
+    {
+      "meaningId": "m184",
+      "form": "pahokeja"
+    },
+    {
+      "meaningId": "m185",
+      "form": "pahokeun"
+    },
+    {
+      "meaningId": "m186",
+      "form": "ribanelu"
+    },
+    {
+      "meaningId": "m187",
+      "form": "nihasun"
+    },
+    {
+      "meaningId": "m188",
+      "form": "rimecho"
+    },
+    {
+      "meaningId": "m189",
+      "form": "rimechun"
+    },
+    {
+      "meaningId": "m190",
+      "form": "rilelu"
+    },
+    {
+      "meaningId": "m191",
+      "form": "poju"
+    },
+    {
+      "meaningId": "m192",
+      "form": "rijelu"
+    },
+    {
+      "meaningId": "m193",
+      "form": "rijelu"
+    },
+    {
+      "meaningId": "m194",
+      "form": "runijo"
+    },
+    {
+      "meaningId": "m195",
+      "form": "runijun"
+    },
+    {
+      "meaningId": "m196",
+      "form": "rimelo"
+    },
+    {
+      "meaningId": "m197",
+      "form": "rimelun"
+    },
+    {
+      "meaningId": "m198",
+      "form": "ruselu"
+    },
+    {
+      "meaningId": "m199",
+      "form": "rusojun"
+    }
+  ]
+}
