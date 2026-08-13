@@ -10,6 +10,9 @@ async function main(): Promise<void> {
     await runGeneration({ dryRun });
   } catch (error) {
     console.error('Error:', error instanceof Error ? error.message : error);
+    if (error instanceof Error && error.cause) {
+      console.error('Cause:', error.cause);
+    }
     process.exit(1);
   }
 }
