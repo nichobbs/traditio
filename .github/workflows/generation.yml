@@ -59,7 +59,6 @@ jobs:
           claude_args: >-
             --model ${{ steps.prepare.outputs.model }}
             --allowedTools ""
-            --output-format json
             --json-schema '{"type":"array","minItems":200,"maxItems":200,"items":{"type":"object","properties":{"meaningId":{"type":"string"},"form":{"type":"string","pattern":"^[a-z]+$","maxLength":40}},"required":["meaningId","form"],"additionalProperties":false}}'
           prompt: |
             ${{ steps.read_prompt.outputs.content }}
