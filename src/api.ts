@@ -5,7 +5,8 @@ export class AnthropicClient implements ApiClient {
   private client: Anthropic;
 
   constructor(apiKey?: string) {
-    this.client = new Anthropic({ apiKey });
+    const resolvedKey = (apiKey ?? process.env.ANTHROPIC_API_KEY)?.trim();
+    this.client = new Anthropic({ apiKey: resolvedKey });
   }
 
   async callLearner(prompt: string, config: ApiConfig): Promise<string> {
