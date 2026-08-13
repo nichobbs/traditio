@@ -58,6 +58,8 @@ export class AnthropicClient implements ApiClient {
   }
 }
 
+const CLI_TIMEOUT_MS = 3 * 60 * 1000;
+
 // Uses the Claude Code CLI in headless mode, authenticated via a
 // CLAUDE_CODE_OAUTH_TOKEN (from `claude setup-token`) so calls are billed
 // against a Claude Pro/Max subscription instead of metered API usage.
@@ -83,6 +85,19 @@ export class ClaudeCliClient implements ApiClient {
 
       let stdout = '';
       let stderr = '';
+      let settled = false;
+
+      const timeout = setTimeout(() => {
+        if (settled) return;
+        settled = true;
+        child.kill('SIGKILL');
+        reject(
+          new Error(
+            `claude CLI timed out after ${CLI_TIMEOUT_MS}ms. stdout so far: ${stdout.slice(0, 500)} stderr so far: ${stderr.slice(0, 500)}`
+          )
+        );
+      }, CLI_TIMEOUT_MS);
+
       child.stdout.on('data', (chunk) => {
         stdout += chunk;
       });
@@ -90,8 +105,17 @@ export class ClaudeCliClient implements ApiClient {
         stderr += chunk;
       });
 
-      child.on('error', reject);
+      child.on('error', (err) => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timeout);
+        reject(err);
+      });
       child.on('close', (code) => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timeout);
+
         if (code !== 0) {
           reject(new Error(`claude CLI exited with code ${code}: ${stderr || stdout}`));
           return;
