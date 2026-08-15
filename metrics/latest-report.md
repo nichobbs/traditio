@@ -2,48 +2,48 @@
 
 _Iterated language transmission experiment: each generation only sees a sampled subset of the previous generation's language and must reconstruct the rest, testing what regularities survive a chain of learners._
 
-![generation](https://img.shields.io/badge/generation-7-blue) ![model](https://img.shields.io/badge/model-claude--haiku--4--5--20251001-informational) ![unique_forms](https://img.shields.io/badge/unique_forms-181/200-orange) ![compositionality](https://img.shields.io/badge/compositionality-0.5099-brightgreen)
+![generation](https://img.shields.io/badge/generation-8-blue) ![model](https://img.shields.io/badge/model-claude--haiku--4--5--20251001-informational) ![unique_forms](https://img.shields.io/badge/unique_forms-164/200-orange) ![compositionality](https://img.shields.io/badge/compositionality-0.4826-brightgreen)
 
 > [!NOTE]
-> ➡️ Compositionality is holding roughly steady (+0.0157) this generation.
+> ➡️ Compositionality is holding roughly steady (-0.0272) this generation.
 
-## Generation 7 (claude-haiku-4-5-20251001)
+## Generation 8 (claude-haiku-4-5-20251001)
 
-Generated: 2026-08-15T00:37:34.307Z
+Generated: 2026-08-15T08:15:39.810Z
 
 | Metric | Value | What it means |
 |---|---|---|
-| Compositionality | 0.5099 (▲ +0.0157) | Correlation between how different two meanings are and how different their word forms are. Closer to 1 = a systematic, rule-like language; closer to 0 = arbitrary forms. |
-| Transmission fidelity (overall) | 0.1785 (▼ -0.0288) | Mean normalized edit distance between this generation's forms and the previous generation's, across all meanings (0 = identical, 1 = completely different). Lower = more faithful transmission. |
+| Compositionality | 0.4826 (▼ -0.0272) | Correlation between how different two meanings are and how different their word forms are. Closer to 1 = a systematic, rule-like language; closer to 0 = arbitrary forms. |
+| Transmission fidelity (overall) | 0.1615 (▼ -0.0171) | Mean normalized edit distance between this generation's forms and the previous generation's, across all meanings (0 = identical, 1 = completely different). Lower = more faithful transmission. |
 | — in-sample | 0.0000 | Same measure, restricted to meanings this generation actually saw during training. |
-| — held-out | 0.2976 | Same measure for meanings NOT shown to this generation — it had to infer these forms. Larger divergence here is expected. |
-| Compression ratio | 0.3388 (▼ -0.0122) | gzip size of the full lexicon divided by its raw size. Lower = more internal redundancy/structure in the forms. |
-| Unique forms | 181 / 200 | Distinct word forms produced. Fewer than 200 means some meanings collapsed onto the same form. |
+| — held-out | 0.2692 | Same measure for meanings NOT shown to this generation — it had to infer these forms. Larger divergence here is expected. |
+| Compression ratio | 0.3126 (▼ -0.0262) | gzip size of the full lexicon divided by its raw size. Lower = more internal redundancy/structure in the forms. |
+| Unique forms | 164 / 200 | Distinct word forms produced. Fewer than 200 means some meanings collapsed onto the same form. |
 
 ## 👀 Watch the language evolve
 
 A fixed set of meanings, tracked every generation, so you can see actual forms drift:
 
-| Meaning | Gen 6 form | Gen 7 form | |
+| Meaning | Gen 7 form | Gen 8 form | |
 |---|---|---|---|
-| wolf sees bird (past) | `towibela` | `towibelo` | 🔄 drifted |
-| wolf fears bird (nonpast) | `wabelan` | `wabelan` | ✅ unchanged |
-| bird chases child (past) | `bocha` | `bobemet` | 🔄 drifted |
-| bird finds child (nonpast) | `bashilun` | `bachatilan` | 🔄 drifted |
-| child eats stone (past) | `chisilo` | `chiselo` | 🔄 drifted |
-| stone sees child (nonpast) | `somolen` | `somelan` | 🔄 drifted |
+| wolf sees bird (past) | `towibelo` | `towibelo` | ✅ unchanged |
+| wolf fears bird (nonpast) | `wabelan` | `wabelen` | 🔄 drifted |
+| bird chases child (past) | `bobemet` | `bobemet` | ✅ unchanged |
+| bird finds child (nonpast) | `bachatilan` | `bachatilan` | ✅ unchanged |
+| child eats stone (past) | `chiselo` | `chiselo` | ✅ unchanged |
+| stone sees child (nonpast) | `somelan` | `somelan` | ✅ unchanged |
 | stone fears river (past) | `solileme` | `solileme` | ✅ unchanged |
-| river chases stone (nonpast) | `rimisilen` | `risiletun` | 🔄 drifted |
+| river chases stone (nonpast) | `risiletun` | `riselan` | 🔄 drifted |
 
 ## 📈 Trend
 
 ```mermaid
 xychart-beta
     title "Compositionality & transmission fidelity across generations"
-    x-axis "Generation" [1, 2, 3, 4, 5, 6, 7]
+    x-axis "Generation" [1, 2, 3, 4, 5, 6, 7, 8]
     y-axis "Score" 0 --> 1
-    line "Compositionality" [0.2559, 0.2849, 0.4060, 0.4663, 0.4745, 0.4941, 0.5099]
-    line "Transmission Fidelity" [0.5148, 0.3796, 0.2746, 0.2481, 0.2251, 0.2074, 0.1785]
+    line "Compositionality" [0.2559, 0.2849, 0.4060, 0.4663, 0.4745, 0.4941, 0.5099, 0.4826]
+    line "Transmission Fidelity" [0.5148, 0.3796, 0.2746, 0.2481, 0.2251, 0.2074, 0.1785, 0.1615]
 ```
 
 ## History across generations
@@ -57,3 +57,4 @@ xychart-beta
 | 5 | 0.4745 | 0.2251 | 0.3544 | 187/200 |
 | 6 | 0.4941 | 0.2074 | 0.3510 | 197/200 |
 | 7 | 0.5099 | 0.1785 | 0.3388 | 181/200 |
+| 8 | 0.4826 | 0.1615 | 0.3126 | 164/200 |
