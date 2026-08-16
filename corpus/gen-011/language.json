@@ -1,0 +1,804 @@
+{
+  "pairs": [
+    {
+      "meaningId": "m000",
+      "form": "towibelo"
+    },
+    {
+      "meaningId": "m001",
+      "form": "towibelen"
+    },
+    {
+      "meaningId": "m002",
+      "form": "towimelo"
+    },
+    {
+      "meaningId": "m003",
+      "form": "towimelen"
+    },
+    {
+      "meaningId": "m004",
+      "form": "towejelo"
+    },
+    {
+      "meaningId": "m005",
+      "form": "towejelen"
+    },
+    {
+      "meaningId": "m006",
+      "form": "towelelo"
+    },
+    {
+      "meaningId": "m007",
+      "form": "towelen"
+    },
+    {
+      "meaningId": "m008",
+      "form": "wobelo"
+    },
+    {
+      "meaningId": "m009",
+      "form": "wobelan"
+    },
+    {
+      "meaningId": "m010",
+      "form": "woimelo"
+    },
+    {
+      "meaningId": "m011",
+      "form": "woimetan"
+    },
+    {
+      "meaningId": "m012",
+      "form": "woselo"
+    },
+    {
+      "meaningId": "m013",
+      "form": "woselan"
+    },
+    {
+      "meaningId": "m014",
+      "form": "wolelelo"
+    },
+    {
+      "meaningId": "m015",
+      "form": "wolelen"
+    },
+    {
+      "meaningId": "m016",
+      "form": "wabelo"
+    },
+    {
+      "meaningId": "m017",
+      "form": "wabelan"
+    },
+    {
+      "meaningId": "m018",
+      "form": "wabemet"
+    },
+    {
+      "meaningId": "m019",
+      "form": "wabetan"
+    },
+    {
+      "meaningId": "m020",
+      "form": "waselo"
+    },
+    {
+      "meaningId": "m021",
+      "form": "waselen"
+    },
+    {
+      "meaningId": "m022",
+      "form": "warelo"
+    },
+    {
+      "meaningId": "m023",
+      "form": "warelan"
+    },
+    {
+      "meaningId": "m024",
+      "form": "wamibelo"
+    },
+    {
+      "meaningId": "m025",
+      "form": "wamibelen"
+    },
+    {
+      "meaningId": "m026",
+      "form": "wamelo"
+    },
+    {
+      "meaningId": "m027",
+      "form": "wamelen"
+    },
+    {
+      "meaningId": "m028",
+      "form": "wajele"
+    },
+    {
+      "meaningId": "m029",
+      "form": "wajelen"
+    },
+    {
+      "meaningId": "m030",
+      "form": "walelo"
+    },
+    {
+      "meaningId": "m031",
+      "form": "walelen"
+    },
+    {
+      "meaningId": "m032",
+      "form": "wamibelo"
+    },
+    {
+      "meaningId": "m033",
+      "form": "wamibelan"
+    },
+    {
+      "meaningId": "m034",
+      "form": "wamimelo"
+    },
+    {
+      "meaningId": "m035",
+      "form": "wamimetan"
+    },
+    {
+      "meaningId": "m036",
+      "form": "wamijelo"
+    },
+    {
+      "meaningId": "m037",
+      "form": "wamijetan"
+    },
+    {
+      "meaningId": "m038",
+      "form": "wamielo"
+    },
+    {
+      "meaningId": "m039",
+      "form": "wamielen"
+    },
+    {
+      "meaningId": "m040",
+      "form": "bobilelo"
+    },
+    {
+      "meaningId": "m041",
+      "form": "bosibelo"
+    },
+    {
+      "meaningId": "m042",
+      "form": "bosimelo"
+    },
+    {
+      "meaningId": "m043",
+      "form": "tosibemetan"
+    },
+    {
+      "meaningId": "m044",
+      "form": "bosijelo"
+    },
+    {
+      "meaningId": "m045",
+      "form": "bosijetan"
+    },
+    {
+      "meaningId": "m046",
+      "form": "bosilelo"
+    },
+    {
+      "meaningId": "m047",
+      "form": "bosiletan"
+    },
+    {
+      "meaningId": "m048",
+      "form": "bobelow"
+    },
+    {
+      "meaningId": "m049",
+      "form": "bobelan"
+    },
+    {
+      "meaningId": "m050",
+      "form": "bomelo"
+    },
+    {
+      "meaningId": "m051",
+      "form": "bomelan"
+    },
+    {
+      "meaningId": "m052",
+      "form": "bojelo"
+    },
+    {
+      "meaningId": "m053",
+      "form": "bojelan"
+    },
+    {
+      "meaningId": "m054",
+      "form": "bobilelo"
+    },
+    {
+      "meaningId": "m055",
+      "form": "bobilelan"
+    },
+    {
+      "meaningId": "m056",
+      "form": "bowelow"
+    },
+    {
+      "meaningId": "m057",
+      "form": "bowelan"
+    },
+    {
+      "meaningId": "m058",
+      "form": "bobemelo"
+    },
+    {
+      "meaningId": "m059",
+      "form": "bobemeten"
+    },
+    {
+      "meaningId": "m060",
+      "form": "bosilte"
+    },
+    {
+      "meaningId": "m061",
+      "form": "bosilten"
+    },
+    {
+      "meaningId": "m062",
+      "form": "borelo"
+    },
+    {
+      "meaningId": "m063",
+      "form": "borelan"
+    },
+    {
+      "meaningId": "m064",
+      "form": "bofemelo"
+    },
+    {
+      "meaningId": "m065",
+      "form": "bofemelen"
+    },
+    {
+      "meaningId": "m066",
+      "form": "bofemelo"
+    },
+    {
+      "meaningId": "m067",
+      "form": "bofemelen"
+    },
+    {
+      "meaningId": "m068",
+      "form": "bofejelo"
+    },
+    {
+      "meaningId": "m069",
+      "form": "bofejelen"
+    },
+    {
+      "meaningId": "m070",
+      "form": "bolilele"
+    },
+    {
+      "meaningId": "m071",
+      "form": "bolilelen"
+    },
+    {
+      "meaningId": "m072",
+      "form": "bodibelo"
+    },
+    {
+      "meaningId": "m073",
+      "form": "bodibelan"
+    },
+    {
+      "meaningId": "m074",
+      "form": "bodimelo"
+    },
+    {
+      "meaningId": "m075",
+      "form": "bodimetan"
+    },
+    {
+      "meaningId": "m076",
+      "form": "bodijelo"
+    },
+    {
+      "meaningId": "m077",
+      "form": "bodijetan"
+    },
+    {
+      "meaningId": "m078",
+      "form": "balelo"
+    },
+    {
+      "meaningId": "m079",
+      "form": "balelan"
+    },
+    {
+      "meaningId": "m080",
+      "form": "tibelo"
+    },
+    {
+      "meaningId": "m081",
+      "form": "tibelan"
+    },
+    {
+      "meaningId": "m082",
+      "form": "tisibemelo"
+    },
+    {
+      "meaningId": "m083",
+      "form": "tisibemen"
+    },
+    {
+      "meaningId": "m084",
+      "form": "tisejun"
+    },
+    {
+      "meaningId": "m085",
+      "form": "tisejenen"
+    },
+    {
+      "meaningId": "m086",
+      "form": "tirelemelo"
+    },
+    {
+      "meaningId": "m087",
+      "form": "tilejelen"
+    },
+    {
+      "meaningId": "m088",
+      "form": "chibelow"
+    },
+    {
+      "meaningId": "m089",
+      "form": "chibelan"
+    },
+    {
+      "meaningId": "m090",
+      "form": "chibelo"
+    },
+    {
+      "meaningId": "m091",
+      "form": "chibemetan"
+    },
+    {
+      "meaningId": "m092",
+      "form": "chiselo"
+    },
+    {
+      "meaningId": "m093",
+      "form": "chiselan"
+    },
+    {
+      "meaningId": "m094",
+      "form": "chirelo"
+    },
+    {
+      "meaningId": "m095",
+      "form": "kilemen"
+    },
+    {
+      "meaningId": "m096",
+      "form": "chiwelow"
+    },
+    {
+      "meaningId": "m097",
+      "form": "chiwelan"
+    },
+    {
+      "meaningId": "m098",
+      "form": "chibelo"
+    },
+    {
+      "meaningId": "m099",
+      "form": "chibelan"
+    },
+    {
+      "meaningId": "m100",
+      "form": "chiselo"
+    },
+    {
+      "meaningId": "m101",
+      "form": "chiselan"
+    },
+    {
+      "meaningId": "m102",
+      "form": "chikelen"
+    },
+    {
+      "meaningId": "m103",
+      "form": "chirelan"
+    },
+    {
+      "meaningId": "m104",
+      "form": "chifebelo"
+    },
+    {
+      "meaningId": "m105",
+      "form": "chifebelan"
+    },
+    {
+      "meaningId": "m106",
+      "form": "chifelo"
+    },
+    {
+      "meaningId": "m107",
+      "form": "chifelan"
+    },
+    {
+      "meaningId": "m108",
+      "form": "chiseme"
+    },
+    {
+      "meaningId": "m109",
+      "form": "chisemen"
+    },
+    {
+      "meaningId": "m110",
+      "form": "chirerelo"
+    },
+    {
+      "meaningId": "m111",
+      "form": "chirelan"
+    },
+    {
+      "meaningId": "m112",
+      "form": "jibelo"
+    },
+    {
+      "meaningId": "m113",
+      "form": "jibelan"
+    },
+    {
+      "meaningId": "m114",
+      "form": "jibemelo"
+    },
+    {
+      "meaningId": "m115",
+      "form": "jibimetan"
+    },
+    {
+      "meaningId": "m116",
+      "form": "jiselo"
+    },
+    {
+      "meaningId": "m117",
+      "form": "jiselan"
+    },
+    {
+      "meaningId": "m118",
+      "form": "jiremel"
+    },
+    {
+      "meaningId": "m119",
+      "form": "jielemen"
+    },
+    {
+      "meaningId": "m120",
+      "form": "sibelelo"
+    },
+    {
+      "meaningId": "m121",
+      "form": "sisilbelan"
+    },
+    {
+      "meaningId": "m122",
+      "form": "sibelo"
+    },
+    {
+      "meaningId": "m123",
+      "form": "siblelan"
+    },
+    {
+      "meaningId": "m124",
+      "form": "sisimelo"
+    },
+    {
+      "meaningId": "m125",
+      "form": "simelen"
+    },
+    {
+      "meaningId": "m126",
+      "form": "silele"
+    },
+    {
+      "meaningId": "m127",
+      "form": "silelen"
+    },
+    {
+      "meaningId": "m128",
+      "form": "sisilbelo"
+    },
+    {
+      "meaningId": "m129",
+      "form": "sisilten"
+    },
+    {
+      "meaningId": "m130",
+      "form": "sibemelo"
+    },
+    {
+      "meaningId": "m131",
+      "form": "sibemelen"
+    },
+    {
+      "meaningId": "m132",
+      "form": "sisimelelo"
+    },
+    {
+      "meaningId": "m133",
+      "form": "sisimelan"
+    },
+    {
+      "meaningId": "m134",
+      "form": "silelen"
+    },
+    {
+      "meaningId": "m135",
+      "form": "silerelen"
+    },
+    {
+      "meaningId": "m136",
+      "form": "mabelo"
+    },
+    {
+      "meaningId": "m137",
+      "form": "mabelan"
+    },
+    {
+      "meaningId": "m138",
+      "form": "mabelo"
+    },
+    {
+      "meaningId": "m139",
+      "form": "mabelan"
+    },
+    {
+      "meaningId": "m140",
+      "form": "mimelo"
+    },
+    {
+      "meaningId": "m141",
+      "form": "malemelen"
+    },
+    {
+      "meaningId": "m142",
+      "form": "malele"
+    },
+    {
+      "meaningId": "m143",
+      "form": "marelan"
+    },
+    {
+      "meaningId": "m144",
+      "form": "sililu"
+    },
+    {
+      "meaningId": "m145",
+      "form": "silibelan"
+    },
+    {
+      "meaningId": "m146",
+      "form": "sibemelu"
+    },
+    {
+      "meaningId": "m147",
+      "form": "sibemelen"
+    },
+    {
+      "meaningId": "m148",
+      "form": "sisimelu"
+    },
+    {
+      "meaningId": "m149",
+      "form": "silemen"
+    },
+    {
+      "meaningId": "m150",
+      "form": "silelu"
+    },
+    {
+      "meaningId": "m151",
+      "form": "solilemen"
+    },
+    {
+      "meaningId": "m152",
+      "form": "sibilun"
+    },
+    {
+      "meaningId": "m153",
+      "form": "sibibelan"
+    },
+    {
+      "meaningId": "m154",
+      "form": "sibibelo"
+    },
+    {
+      "meaningId": "m155",
+      "form": "sibibelan"
+    },
+    {
+      "meaningId": "m156",
+      "form": "simelen"
+    },
+    {
+      "meaningId": "m157",
+      "form": "sibemelen"
+    },
+    {
+      "meaningId": "m158",
+      "form": "sielemelo"
+    },
+    {
+      "meaningId": "m159",
+      "form": "sirelemelen"
+    },
+    {
+      "meaningId": "m160",
+      "form": "risilbelo"
+    },
+    {
+      "meaningId": "m161",
+      "form": "risilbelan"
+    },
+    {
+      "meaningId": "m162",
+      "form": "ribelo"
+    },
+    {
+      "meaningId": "m163",
+      "form": "ribelan"
+    },
+    {
+      "meaningId": "m164",
+      "form": "rimelo"
+    },
+    {
+      "meaningId": "m165",
+      "form": "rimelen"
+    },
+    {
+      "meaningId": "m166",
+      "form": "risemelo"
+    },
+    {
+      "meaningId": "m167",
+      "form": "riselan"
+    },
+    {
+      "meaningId": "m168",
+      "form": "risilbo"
+    },
+    {
+      "meaningId": "m169",
+      "form": "risilbelan"
+    },
+    {
+      "meaningId": "m170",
+      "form": "ribemelo"
+    },
+    {
+      "meaningId": "m171",
+      "form": "ribelan"
+    },
+    {
+      "meaningId": "m172",
+      "form": "rimelo"
+    },
+    {
+      "meaningId": "m173",
+      "form": "rimelan"
+    },
+    {
+      "meaningId": "m174",
+      "form": "riselo"
+    },
+    {
+      "meaningId": "m175",
+      "form": "riselan"
+    },
+    {
+      "meaningId": "m176",
+      "form": "ruwelo"
+    },
+    {
+      "meaningId": "m177",
+      "form": "ruwelan"
+    },
+    {
+      "meaningId": "m178",
+      "form": "rubelo"
+    },
+    {
+      "meaningId": "m179",
+      "form": "rubelan"
+    },
+    {
+      "meaningId": "m180",
+      "form": "rumelo"
+    },
+    {
+      "meaningId": "m181",
+      "form": "rumenlan"
+    },
+    {
+      "meaningId": "m182",
+      "form": "ruselo"
+    },
+    {
+      "meaningId": "m183",
+      "form": "ruselen"
+    },
+    {
+      "meaningId": "m184",
+      "form": "pupelo"
+    },
+    {
+      "meaningId": "m185",
+      "form": "pupelan"
+    },
+    {
+      "meaningId": "m186",
+      "form": "pubelo"
+    },
+    {
+      "meaningId": "m187",
+      "form": "pubelan"
+    },
+    {
+      "meaningId": "m188",
+      "form": "pumelo"
+    },
+    {
+      "meaningId": "m189",
+      "form": "rubemelen"
+    },
+    {
+      "meaningId": "m190",
+      "form": "puselo"
+    },
+    {
+      "meaningId": "m191",
+      "form": "puselan"
+    },
+    {
+      "meaningId": "m192",
+      "form": "rubelo"
+    },
+    {
+      "meaningId": "m193",
+      "form": "rubelan"
+    },
+    {
+      "meaningId": "m194",
+      "form": "rupemelo"
+    },
+    {
+      "meaningId": "m195",
+      "form": "rupelan"
+    },
+    {
+      "meaningId": "m196",
+      "form": "rumelo"
+    },
+    {
+      "meaningId": "m197",
+      "form": "rimemelen"
+    },
+    {
+      "meaningId": "m198",
+      "form": "ruselo"
+    },
+    {
+      "meaningId": "m199",
+      "form": "riselan"
+    }
+  ]
+}
