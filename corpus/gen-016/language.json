@@ -1,0 +1,804 @@
+{
+  "pairs": [
+    {
+      "meaningId": "m000",
+      "form": "towfemelo"
+    },
+    {
+      "meaningId": "m001",
+      "form": "towfemelen"
+    },
+    {
+      "meaningId": "m002",
+      "form": "towimelo"
+    },
+    {
+      "meaningId": "m003",
+      "form": "towimelen"
+    },
+    {
+      "meaningId": "m004",
+      "form": "towjelo"
+    },
+    {
+      "meaningId": "m005",
+      "form": "towjelen"
+    },
+    {
+      "meaningId": "m006",
+      "form": "towlelo"
+    },
+    {
+      "meaningId": "m007",
+      "form": "towlelen"
+    },
+    {
+      "meaningId": "m008",
+      "form": "wofemelo"
+    },
+    {
+      "meaningId": "m009",
+      "form": "wofemelen"
+    },
+    {
+      "meaningId": "m010",
+      "form": "womemelo"
+    },
+    {
+      "meaningId": "m011",
+      "form": "womemelen"
+    },
+    {
+      "meaningId": "m012",
+      "form": "wojelo"
+    },
+    {
+      "meaningId": "m013",
+      "form": "wojelen"
+    },
+    {
+      "meaningId": "m014",
+      "form": "wolelo"
+    },
+    {
+      "meaningId": "m015",
+      "form": "wolelen"
+    },
+    {
+      "meaningId": "m016",
+      "form": "wajemelo"
+    },
+    {
+      "meaningId": "m017",
+      "form": "wajemelen"
+    },
+    {
+      "meaningId": "m018",
+      "form": "wamemelo"
+    },
+    {
+      "meaningId": "m019",
+      "form": "wamemelen"
+    },
+    {
+      "meaningId": "m020",
+      "form": "wasemelo"
+    },
+    {
+      "meaningId": "m021",
+      "form": "wasemelen"
+    },
+    {
+      "meaningId": "m022",
+      "form": "warimelo"
+    },
+    {
+      "meaningId": "m023",
+      "form": "warimelen"
+    },
+    {
+      "meaningId": "m024",
+      "form": "wajemelo"
+    },
+    {
+      "meaningId": "m025",
+      "form": "wajemelen"
+    },
+    {
+      "meaningId": "m026",
+      "form": "wamemelo"
+    },
+    {
+      "meaningId": "m027",
+      "form": "wamemelen"
+    },
+    {
+      "meaningId": "m028",
+      "form": "wasemelo"
+    },
+    {
+      "meaningId": "m029",
+      "form": "wasemelen"
+    },
+    {
+      "meaningId": "m030",
+      "form": "walelo"
+    },
+    {
+      "meaningId": "m031",
+      "form": "walelen"
+    },
+    {
+      "meaningId": "m032",
+      "form": "wajemelo"
+    },
+    {
+      "meaningId": "m033",
+      "form": "wajemelen"
+    },
+    {
+      "meaningId": "m034",
+      "form": "wamemelo"
+    },
+    {
+      "meaningId": "m035",
+      "form": "wamemelen"
+    },
+    {
+      "meaningId": "m036",
+      "form": "wasimelo"
+    },
+    {
+      "meaningId": "m037",
+      "form": "wasimelen"
+    },
+    {
+      "meaningId": "m038",
+      "form": "walimelo"
+    },
+    {
+      "meaningId": "m039",
+      "form": "walimelen"
+    },
+    {
+      "meaningId": "m040",
+      "form": "boibemelo"
+    },
+    {
+      "meaningId": "m041",
+      "form": "boibemelen"
+    },
+    {
+      "meaningId": "m042",
+      "form": "boimelo"
+    },
+    {
+      "meaningId": "m043",
+      "form": "boimelen"
+    },
+    {
+      "meaningId": "m044",
+      "form": "bojelo"
+    },
+    {
+      "meaningId": "m045",
+      "form": "bojelen"
+    },
+    {
+      "meaningId": "m046",
+      "form": "bolelo"
+    },
+    {
+      "meaningId": "m047",
+      "form": "bolelen"
+    },
+    {
+      "meaningId": "m048",
+      "form": "bojemelo"
+    },
+    {
+      "meaningId": "m049",
+      "form": "bojemelen"
+    },
+    {
+      "meaningId": "m050",
+      "form": "bomelo"
+    },
+    {
+      "meaningId": "m051",
+      "form": "bomelen"
+    },
+    {
+      "meaningId": "m052",
+      "form": "bojelo"
+    },
+    {
+      "meaningId": "m053",
+      "form": "bojelen"
+    },
+    {
+      "meaningId": "m054",
+      "form": "bolelan"
+    },
+    {
+      "meaningId": "m055",
+      "form": "bolelen"
+    },
+    {
+      "meaningId": "m056",
+      "form": "boamemelo"
+    },
+    {
+      "meaningId": "m057",
+      "form": "boamemelen"
+    },
+    {
+      "meaningId": "m058",
+      "form": "bomelo"
+    },
+    {
+      "meaningId": "m059",
+      "form": "bomelen"
+    },
+    {
+      "meaningId": "m060",
+      "form": "bosemelo"
+    },
+    {
+      "meaningId": "m061",
+      "form": "bosemelen"
+    },
+    {
+      "meaningId": "m062",
+      "form": "borimelo"
+    },
+    {
+      "meaningId": "m063",
+      "form": "borimelen"
+    },
+    {
+      "meaningId": "m064",
+      "form": "bobemelo"
+    },
+    {
+      "meaningId": "m065",
+      "form": "bobemelen"
+    },
+    {
+      "meaningId": "m066",
+      "form": "bofemelo"
+    },
+    {
+      "meaningId": "m067",
+      "form": "bofemelen"
+    },
+    {
+      "meaningId": "m068",
+      "form": "bosemelo"
+    },
+    {
+      "meaningId": "m069",
+      "form": "bosemelen"
+    },
+    {
+      "meaningId": "m070",
+      "form": "bolemelo"
+    },
+    {
+      "meaningId": "m071",
+      "form": "bolemelen"
+    },
+    {
+      "meaningId": "m072",
+      "form": "bobimelo"
+    },
+    {
+      "meaningId": "m073",
+      "form": "bobimelen"
+    },
+    {
+      "meaningId": "m074",
+      "form": "bomimelo"
+    },
+    {
+      "meaningId": "m075",
+      "form": "bomimelen"
+    },
+    {
+      "meaningId": "m076",
+      "form": "bosimelo"
+    },
+    {
+      "meaningId": "m077",
+      "form": "bosimelen"
+    },
+    {
+      "meaningId": "m078",
+      "form": "bolimelo"
+    },
+    {
+      "meaningId": "m079",
+      "form": "bolimelen"
+    },
+    {
+      "meaningId": "m080",
+      "form": "tibemelo"
+    },
+    {
+      "meaningId": "m081",
+      "form": "tibemelen"
+    },
+    {
+      "meaningId": "m082",
+      "form": "tibemelo"
+    },
+    {
+      "meaningId": "m083",
+      "form": "tibelen"
+    },
+    {
+      "meaningId": "m084",
+      "form": "tijelo"
+    },
+    {
+      "meaningId": "m085",
+      "form": "tijelen"
+    },
+    {
+      "meaningId": "m086",
+      "form": "tilelo"
+    },
+    {
+      "meaningId": "m087",
+      "form": "tilelen"
+    },
+    {
+      "meaningId": "m088",
+      "form": "chiwemelo"
+    },
+    {
+      "meaningId": "m089",
+      "form": "chiwemelen"
+    },
+    {
+      "meaningId": "m090",
+      "form": "chbemelo"
+    },
+    {
+      "meaningId": "m091",
+      "form": "chbemelen"
+    },
+    {
+      "meaningId": "m092",
+      "form": "chsjemelo"
+    },
+    {
+      "meaningId": "m093",
+      "form": "chsjemelen"
+    },
+    {
+      "meaningId": "m094",
+      "form": "chilelo"
+    },
+    {
+      "meaningId": "m095",
+      "form": "chilelen"
+    },
+    {
+      "meaningId": "m096",
+      "form": "chiwemelo"
+    },
+    {
+      "meaningId": "m097",
+      "form": "chiwemelen"
+    },
+    {
+      "meaningId": "m098",
+      "form": "chibemelo"
+    },
+    {
+      "meaningId": "m099",
+      "form": "chibemelen"
+    },
+    {
+      "meaningId": "m100",
+      "form": "chisemelo"
+    },
+    {
+      "meaningId": "m101",
+      "form": "chisemelen"
+    },
+    {
+      "meaningId": "m102",
+      "form": "chilemelo"
+    },
+    {
+      "meaningId": "m103",
+      "form": "chilemelen"
+    },
+    {
+      "meaningId": "m104",
+      "form": "chimemelo"
+    },
+    {
+      "meaningId": "m105",
+      "form": "chimemelen"
+    },
+    {
+      "meaningId": "m106",
+      "form": "chbemelo"
+    },
+    {
+      "meaningId": "m107",
+      "form": "chbemelen"
+    },
+    {
+      "meaningId": "m108",
+      "form": "chsemelo"
+    },
+    {
+      "meaningId": "m109",
+      "form": "chsemelen"
+    },
+    {
+      "meaningId": "m110",
+      "form": "chilemelo"
+    },
+    {
+      "meaningId": "m111",
+      "form": "chilemelen"
+    },
+    {
+      "meaningId": "m112",
+      "form": "jibilelo"
+    },
+    {
+      "meaningId": "m113",
+      "form": "jibilelen"
+    },
+    {
+      "meaningId": "m114",
+      "form": "jibemelo"
+    },
+    {
+      "meaningId": "m115",
+      "form": "jibemelen"
+    },
+    {
+      "meaningId": "m116",
+      "form": "jisimelo"
+    },
+    {
+      "meaningId": "m117",
+      "form": "jisimelen"
+    },
+    {
+      "meaningId": "m118",
+      "form": "jilemelo"
+    },
+    {
+      "meaningId": "m119",
+      "form": "jilemelen"
+    },
+    {
+      "meaningId": "m120",
+      "form": "sibelow"
+    },
+    {
+      "meaningId": "m121",
+      "form": "sibelow"
+    },
+    {
+      "meaningId": "m122",
+      "form": "silen"
+    },
+    {
+      "meaningId": "m123",
+      "form": "silen"
+    },
+    {
+      "meaningId": "m124",
+      "form": "simelo"
+    },
+    {
+      "meaningId": "m125",
+      "form": "simelen"
+    },
+    {
+      "meaningId": "m126",
+      "form": "silelo"
+    },
+    {
+      "meaningId": "m127",
+      "form": "silelen"
+    },
+    {
+      "meaningId": "m128",
+      "form": "sibelo"
+    },
+    {
+      "meaningId": "m129",
+      "form": "sibelen"
+    },
+    {
+      "meaningId": "m130",
+      "form": "sibelo"
+    },
+    {
+      "meaningId": "m131",
+      "form": "sibelen"
+    },
+    {
+      "meaningId": "m132",
+      "form": "simelo"
+    },
+    {
+      "meaningId": "m133",
+      "form": "simelen"
+    },
+    {
+      "meaningId": "m134",
+      "form": "silelo"
+    },
+    {
+      "meaningId": "m135",
+      "form": "silelen"
+    },
+    {
+      "meaningId": "m136",
+      "form": "mabemelo"
+    },
+    {
+      "meaningId": "m137",
+      "form": "mabemelen"
+    },
+    {
+      "meaningId": "m138",
+      "form": "mabelo"
+    },
+    {
+      "meaningId": "m139",
+      "form": "mabelen"
+    },
+    {
+      "meaningId": "m140",
+      "form": "mamelo"
+    },
+    {
+      "meaningId": "m141",
+      "form": "mamelen"
+    },
+    {
+      "meaningId": "m142",
+      "form": "malemelo"
+    },
+    {
+      "meaningId": "m143",
+      "form": "malemelen"
+    },
+    {
+      "meaningId": "m144",
+      "form": "sobemelo"
+    },
+    {
+      "meaningId": "m145",
+      "form": "sobemelen"
+    },
+    {
+      "meaningId": "m146",
+      "form": "sobelo"
+    },
+    {
+      "meaningId": "m147",
+      "form": "sobelen"
+    },
+    {
+      "meaningId": "m148",
+      "form": "somelo"
+    },
+    {
+      "meaningId": "m149",
+      "form": "somelen"
+    },
+    {
+      "meaningId": "m150",
+      "form": "solemelo"
+    },
+    {
+      "meaningId": "m151",
+      "form": "solemelen"
+    },
+    {
+      "meaningId": "m152",
+      "form": "sibemelo"
+    },
+    {
+      "meaningId": "m153",
+      "form": "sibemelen"
+    },
+    {
+      "meaningId": "m154",
+      "form": "sibelo"
+    },
+    {
+      "meaningId": "m155",
+      "form": "sibelen"
+    },
+    {
+      "meaningId": "m156",
+      "form": "simelo"
+    },
+    {
+      "meaningId": "m157",
+      "form": "simelen"
+    },
+    {
+      "meaningId": "m158",
+      "form": "silelo"
+    },
+    {
+      "meaningId": "m159",
+      "form": "silelen"
+    },
+    {
+      "meaningId": "m160",
+      "form": "rubelo"
+    },
+    {
+      "meaningId": "m161",
+      "form": "rubelen"
+    },
+    {
+      "meaningId": "m162",
+      "form": "rubelo"
+    },
+    {
+      "meaningId": "m163",
+      "form": "rubelen"
+    },
+    {
+      "meaningId": "m164",
+      "form": "rumelo"
+    },
+    {
+      "meaningId": "m165",
+      "form": "rumelen"
+    },
+    {
+      "meaningId": "m166",
+      "form": "ruselo"
+    },
+    {
+      "meaningId": "m167",
+      "form": "ruselen"
+    },
+    {
+      "meaningId": "m168",
+      "form": "rubemelo"
+    },
+    {
+      "meaningId": "m169",
+      "form": "rubemelen"
+    },
+    {
+      "meaningId": "m170",
+      "form": "rubelo"
+    },
+    {
+      "meaningId": "m171",
+      "form": "rubelen"
+    },
+    {
+      "meaningId": "m172",
+      "form": "rumelo"
+    },
+    {
+      "meaningId": "m173",
+      "form": "rumelen"
+    },
+    {
+      "meaningId": "m174",
+      "form": "ruselo"
+    },
+    {
+      "meaningId": "m175",
+      "form": "ruselen"
+    },
+    {
+      "meaningId": "m176",
+      "form": "rubemelo"
+    },
+    {
+      "meaningId": "m177",
+      "form": "rubemelen"
+    },
+    {
+      "meaningId": "m178",
+      "form": "rubelo"
+    },
+    {
+      "meaningId": "m179",
+      "form": "rubelen"
+    },
+    {
+      "meaningId": "m180",
+      "form": "rumelo"
+    },
+    {
+      "meaningId": "m181",
+      "form": "rumelen"
+    },
+    {
+      "meaningId": "m182",
+      "form": "rusemelo"
+    },
+    {
+      "meaningId": "m183",
+      "form": "rusemelen"
+    },
+    {
+      "meaningId": "m184",
+      "form": "pubemelo"
+    },
+    {
+      "meaningId": "m185",
+      "form": "pubemelen"
+    },
+    {
+      "meaningId": "m186",
+      "form": "pubelo"
+    },
+    {
+      "meaningId": "m187",
+      "form": "pubelen"
+    },
+    {
+      "meaningId": "m188",
+      "form": "pumelo"
+    },
+    {
+      "meaningId": "m189",
+      "form": "pumelen"
+    },
+    {
+      "meaningId": "m190",
+      "form": "pusemelo"
+    },
+    {
+      "meaningId": "m191",
+      "form": "pusemelen"
+    },
+    {
+      "meaningId": "m192",
+      "form": "rubemelo"
+    },
+    {
+      "meaningId": "m193",
+      "form": "rubemelen"
+    },
+    {
+      "meaningId": "m194",
+      "form": "rubemelo"
+    },
+    {
+      "meaningId": "m195",
+      "form": "rubemelen"
+    },
+    {
+      "meaningId": "m196",
+      "form": "rumemelo"
+    },
+    {
+      "meaningId": "m197",
+      "form": "rumemelen"
+    },
+    {
+      "meaningId": "m198",
+      "form": "rusemelo"
+    },
+    {
+      "meaningId": "m199",
+      "form": "rusemelen"
+    }
+  ]
+}
