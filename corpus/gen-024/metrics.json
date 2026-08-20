@@ -1,0 +1,27 @@
+{
+  "transmissionFidelity": {
+    "overall": {
+      "meanLevenshtein": 0.03388888888888889,
+      "exactMatchRate": 0.83
+    },
+    "inSample": {
+      "meanLevenshtein": 0,
+      "exactMatchRate": 1
+    },
+    "heldOut": {
+      "meanLevenshtein": 0.05648148148148149,
+      "exactMatchRate": 0.7166666666666667
+    }
+  },
+  "compositionality": {
+    "pearsonCorrelation": 0.7061335756084018
+  },
+  "compressibility": {
+    "compressionRatio": 0.1516919486581097
+  },
+  "lexiconStats": {
+    "uniqueFormCount": 94,
+    "meanFormLength": 8.57,
+    "characterBigramEntropy": 4.348572061190898
+  }
+}
