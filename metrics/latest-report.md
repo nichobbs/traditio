@@ -2,34 +2,34 @@
 
 _Iterated language transmission experiment: each generation only sees a sampled subset of the previous generation's language and must reconstruct the rest, testing what regularities survive a chain of learners._
 
-![generation](https://img.shields.io/badge/generation-35-blue) ![model](https://img.shields.io/badge/model-claude--haiku--4--5--20251001-informational) ![unique_forms](https://img.shields.io/badge/unique_forms-64/200-orange) ![compositionality](https://img.shields.io/badge/compositionality-0.7619-brightgreen)
+![generation](https://img.shields.io/badge/generation-36-blue) ![model](https://img.shields.io/badge/model-claude--haiku--4--5--20251001-informational) ![unique_forms](https://img.shields.io/badge/unique_forms-64/200-orange) ![compositionality](https://img.shields.io/badge/compositionality-0.7619-brightgreen)
 
 > [!NOTE]
-> ➡️ Compositionality is holding roughly steady (+0.0115) this generation.
+> ➡️ Compositionality is holding roughly steady (+0.0000) this generation.
 
-## Generation 35 (claude-haiku-4-5-20251001)
+## Generation 36 (claude-haiku-4-5-20251001)
 
-Generated: 2026-08-26T00:32:54.890Z
+Generated: 2026-08-26T08:31:05.116Z
 
 | Metric | Value | What it means |
 |---|---|---|
-| Compositionality | 0.7619 (▲ +0.0115) | Correlation between how different two meanings are and how different their word forms are. Closer to 1 = a systematic, rule-like language; closer to 0 = arbitrary forms. |
-| Transmission fidelity (overall) | 0.0092 (▼ -0.0042) | Mean normalized edit distance between this generation's forms and the previous generation's, across all meanings (0 = identical, 1 = completely different). Lower = more faithful transmission. |
-| — in-sample | 0.0087 | Same measure, restricted to meanings this generation actually saw during training. |
-| — held-out | 0.0095 | Same measure for meanings NOT shown to this generation — it had to infer these forms. Larger divergence here is expected. |
-| Compression ratio | 0.1044 (▼ -0.0017) | gzip size of the full lexicon divided by its raw size. Lower = more internal redundancy/structure in the forms. |
+| Compositionality | 0.7619 (→ steady) | Correlation between how different two meanings are and how different their word forms are. Closer to 1 = a systematic, rule-like language; closer to 0 = arbitrary forms. |
+| Transmission fidelity (overall) | 0.0000 (▼ -0.0092) | Mean normalized edit distance between this generation's forms and the previous generation's, across all meanings (0 = identical, 1 = completely different). Lower = more faithful transmission. |
+| — in-sample | 0.0000 | Same measure, restricted to meanings this generation actually saw during training. |
+| — held-out | 0.0000 | Same measure for meanings NOT shown to this generation — it had to infer these forms. Larger divergence here is expected. |
+| Compression ratio | 0.1044 (→ steady) | gzip size of the full lexicon divided by its raw size. Lower = more internal redundancy/structure in the forms. |
 | Unique forms | 64 / 200 | Distinct word forms produced. Fewer than 200 means some meanings collapsed onto the same form. |
 
 ## 👀 Watch the language evolve
 
 A fixed set of meanings, tracked every generation, so you can see actual forms drift:
 
-| Meaning | Gen 34 form | Gen 35 form | |
+| Meaning | Gen 35 form | Gen 36 form | |
 |---|---|---|---|
 | wolf sees bird (past) | `wajemelo` | `wajemelo` | ✅ unchanged |
 | wolf fears bird (nonpast) | `wajemelen` | `wajemelen` | ✅ unchanged |
-| bird chases child (past) | `bojemelo` | `bomemelo` | 🔄 drifted |
-| bird finds child (nonpast) | `bojemelen` | `bomemelen` | 🔄 drifted |
+| bird chases child (past) | `bomemelo` | `bomemelo` | ✅ unchanged |
+| bird finds child (nonpast) | `bomemelen` | `bomemelen` | ✅ unchanged |
 | child eats stone (past) | `chisemelo` | `chisemelo` | ✅ unchanged |
 | stone sees child (nonpast) | `simemelen` | `simemelen` | ✅ unchanged |
 | stone fears river (past) | `silemelo` | `silemelo` | ✅ unchanged |
@@ -40,10 +40,10 @@ A fixed set of meanings, tracked every generation, so you can see actual forms d
 ```mermaid
 xychart-beta
     title "Compositionality & transmission fidelity across generations"
-    x-axis "Generation" [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
+    x-axis "Generation" [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]
     y-axis "Score" 0 --> 1
-    line "Compositionality" [0.2559, 0.2849, 0.4060, 0.4663, 0.4745, 0.4941, 0.5099, 0.4826, 0.4603, 0.4619, 0.5665, 0.6011, 0.5822, 0.6121, 0.6029, 0.6464, 0.6473, 0.6195, 0.6304, 0.6332, 0.6566, 0.6361, 0.6598, 0.7061, 0.6725, 0.6757, 0.6767, 0.6767, 0.6863, 0.7028, 0.6890, 0.7012, 0.7442, 0.7505, 0.7619]
-    line "Transmission Fidelity" [0.5148, 0.3796, 0.2746, 0.2481, 0.2251, 0.2074, 0.1785, 0.1615, 0.1949, 0.1977, 0.1504, 0.1472, 0.1286, 0.1016, 0.0861, 0.0987, 0.0594, 0.0888, 0.0697, 0.0276, 0.0536, 0.0500, 0.0553, 0.0339, 0.0483, 0.0051, 0.0012, 0.0000, 0.0083, 0.0219, 0.0066, 0.0142, 0.0301, 0.0134, 0.0092]
+    line "Compositionality" [0.2559, 0.2849, 0.4060, 0.4663, 0.4745, 0.4941, 0.5099, 0.4826, 0.4603, 0.4619, 0.5665, 0.6011, 0.5822, 0.6121, 0.6029, 0.6464, 0.6473, 0.6195, 0.6304, 0.6332, 0.6566, 0.6361, 0.6598, 0.7061, 0.6725, 0.6757, 0.6767, 0.6767, 0.6863, 0.7028, 0.6890, 0.7012, 0.7442, 0.7505, 0.7619, 0.7619]
+    line "Transmission Fidelity" [0.5148, 0.3796, 0.2746, 0.2481, 0.2251, 0.2074, 0.1785, 0.1615, 0.1949, 0.1977, 0.1504, 0.1472, 0.1286, 0.1016, 0.0861, 0.0987, 0.0594, 0.0888, 0.0697, 0.0276, 0.0536, 0.0500, 0.0553, 0.0339, 0.0483, 0.0051, 0.0012, 0.0000, 0.0083, 0.0219, 0.0066, 0.0142, 0.0301, 0.0134, 0.0092, 0.0000]
 ```
 
 ## History across generations
@@ -85,3 +85,4 @@ xychart-beta
 | 33 | 0.7442 | 0.0301 | 0.1130 | 69/200 |
 | 34 | 0.7505 | 0.0134 | 0.1061 | 66/200 |
 | 35 | 0.7619 | 0.0092 | 0.1044 | 64/200 |
+| 36 | 0.7619 | 0.0000 | 0.1044 | 64/200 |
