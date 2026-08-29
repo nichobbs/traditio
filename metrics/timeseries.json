@@ -278,5 +278,12 @@
     "transmissionFidelityOverall": 0.004722222222222222,
     "compressionRatio": 0.0951276102088167,
     "uniqueForms": 56
+  },
+  {
+    "generation": 41,
+    "compositionality": 0.8008546141440652,
+    "transmissionFidelityOverall": 0.014583333333333335,
+    "compressionRatio": 0.09367816091954023,
+    "uniqueForms": 48
   }
 ]
