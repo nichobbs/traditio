@@ -1,0 +1,886 @@
+{
+  "pairs": [
+    {
+      "meaningId": "m173",
+      "form": "rumemelen"
+    },
+    {
+      "meaningId": "m128",
+      "form": "sidemelo"
+    },
+    {
+      "meaningId": "m180",
+      "form": "rumemelo"
+    },
+    {
+      "meaningId": "m017",
+      "form": "wajemelen"
+    },
+    {
+      "meaningId": "m168",
+      "form": "rudemelo"
+    },
+    {
+      "meaningId": "m048",
+      "form": "bodemelo"
+    },
+    {
+      "meaningId": "m083",
+      "form": "chijemelen"
+    },
+    {
+      "meaningId": "m037",
+      "form": "wasemelen"
+    },
+    {
+      "meaningId": "m036",
+      "form": "wasemelo"
+    },
+    {
+      "meaningId": "m085",
+      "form": "chisemelen"
+    },
+    {
+      "meaningId": "m154",
+      "form": "sijemelo"
+    },
+    {
+      "meaningId": "m087",
+      "form": "chilemelen"
+    },
+    {
+      "meaningId": "m172",
+      "form": "rumemelo"
+    },
+    {
+      "meaningId": "m132",
+      "form": "simemelo"
+    },
+    {
+      "meaningId": "m000",
+      "form": "wajemelo"
+    },
+    {
+      "meaningId": "m086",
+      "form": "chilemelo"
+    },
+    {
+      "meaningId": "m038",
+      "form": "walemelo"
+    },
+    {
+      "meaningId": "m182",
+      "form": "rusemelo"
+    },
+    {
+      "meaningId": "m076",
+      "form": "bosemelo"
+    },
+    {
+      "meaningId": "m014",
+      "form": "walemelo"
+    },
+    {
+      "meaningId": "m193",
+      "form": "rudemelen"
+    },
+    {
+      "meaningId": "m104",
+      "form": "chidemelo"
+    },
+    {
+      "meaningId": "m181",
+      "form": "rumemelen"
+    },
+    {
+      "meaningId": "m067",
+      "form": "bomemelen"
+    },
+    {
+      "meaningId": "m120",
+      "form": "sidemelo"
+    },
+    {
+      "meaningId": "m151",
+      "form": "silemelen"
+    },
+    {
+      "meaningId": "m030",
+      "form": "walemelo"
+    },
+    {
+      "meaningId": "m196",
+      "form": "rumemelo"
+    },
+    {
+      "meaningId": "m013",
+      "form": "wasemelen"
+    },
+    {
+      "meaningId": "m032",
+      "form": "wajemelo"
+    },
+    {
+      "meaningId": "m100",
+      "form": "chisemelo"
+    },
+    {
+      "meaningId": "m077",
+      "form": "bosemelen"
+    },
+    {
+      "meaningId": "m045",
+      "form": "bosemelen"
+    },
+    {
+      "meaningId": "m012",
+      "form": "wasemelo"
+    },
+    {
+      "meaningId": "m166",
+      "form": "rusemelo"
+    },
+    {
+      "meaningId": "m199",
+      "form": "rusemelen"
+    },
+    {
+      "meaningId": "m162",
+      "form": "rujemelo"
+    },
+    {
+      "meaningId": "m124",
+      "form": "simemelo"
+    },
+    {
+      "meaningId": "m066",
+      "form": "bomemelo"
+    },
+    {
+      "meaningId": "m040",
+      "form": "bodemelo"
+    },
+    {
+      "meaningId": "m073",
+      "form": "bodemelen"
+    },
+    {
+      "meaningId": "m062",
+      "form": "bolemelo"
+    },
+    {
+      "meaningId": "m033",
+      "form": "wajemelen"
+    },
+    {
+      "meaningId": "m116",
+      "form": "chisemelo"
+    },
+    {
+      "meaningId": "m198",
+      "form": "rusemelo"
+    },
+    {
+      "meaningId": "m078",
+      "form": "bolemelo"
+    },
+    {
+      "meaningId": "m089",
+      "form": "chidemelen"
+    },
+    {
+      "meaningId": "m008",
+      "form": "wajemelo"
+    },
+    {
+      "meaningId": "m183",
+      "form": "rusemelen"
+    },
+    {
+      "meaningId": "m103",
+      "form": "chilemelen"
+    },
+    {
+      "meaningId": "m065",
+      "form": "bodemelen"
+    },
+    {
+      "meaningId": "m084",
+      "form": "chisemelo"
+    },
+    {
+      "meaningId": "m027",
+      "form": "wamemelen"
+    },
+    {
+      "meaningId": "m031",
+      "form": "walemelen"
+    },
+    {
+      "meaningId": "m068",
+      "form": "bosemelo"
+    },
+    {
+      "meaningId": "m186",
+      "form": "rujemelo"
+    },
+    {
+      "meaningId": "m194",
+      "form": "rujemelo"
+    },
+    {
+      "meaningId": "m138",
+      "form": "sijemelo"
+    },
+    {
+      "meaningId": "m029",
+      "form": "wasemelen"
+    },
+    {
+      "meaningId": "m026",
+      "form": "wamemelo"
+    },
+    {
+      "meaningId": "m018",
+      "form": "wamemelo"
+    },
+    {
+      "meaningId": "m115",
+      "form": "chijemelen"
+    },
+    {
+      "meaningId": "m022",
+      "form": "walemelo"
+    },
+    {
+      "meaningId": "m143",
+      "form": "silemelen"
+    },
+    {
+      "meaningId": "m095",
+      "form": "chilemelen"
+    },
+    {
+      "meaningId": "m131",
+      "form": "sijemelen"
+    },
+    {
+      "meaningId": "m001",
+      "form": "wajemelen"
+    },
+    {
+      "meaningId": "m082",
+      "form": "chijemelo"
+    },
+    {
+      "meaningId": "m070",
+      "form": "bolemelo"
+    },
+    {
+      "meaningId": "m136",
+      "form": "sidemelo"
+    },
+    {
+      "meaningId": "m157",
+      "form": "simemelen"
+    },
+    {
+      "meaningId": "m007",
+      "form": "walemelen"
+    },
+    {
+      "meaningId": "m156",
+      "form": "simemelo"
+    },
+    {
+      "meaningId": "m195",
+      "form": "rujemelen"
+    },
+    {
+      "meaningId": "m113",
+      "form": "chidemelen"
+    },
+    {
+      "meaningId": "m053",
+      "form": "bosemelen"
+    },
+    {
+      "meaningId": "m106",
+      "form": "chijemelo"
+    },
+    {
+      "meaningId": "m091",
+      "form": "chijemelen"
+    },
+    {
+      "meaningId": "m119",
+      "form": "chilemelen"
+    },
+    {
+      "meaningId": "m039",
+      "form": "walemelen"
+    }
+  ],
+  "meanings": [
+    {
+      "id": "m000",
+      "agent": "wolf",
+      "action": "sees",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m001",
+      "agent": "wolf",
+      "action": "sees",
+      "patient": "bird",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m007",
+      "agent": "wolf",
+      "action": "sees",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m008",
+      "agent": "wolf",
+      "action": "chases",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m012",
+      "agent": "wolf",
+      "action": "chases",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m013",
+      "agent": "wolf",
+      "action": "chases",
+      "patient": "stone",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m014",
+      "agent": "wolf",
+      "action": "chases",
+      "patient": "river",
+      "tense": "past"
+    },
+    {
+      "id": "m017",
+      "agent": "wolf",
+      "action": "eats",
+      "patient": "bird",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m018",
+      "agent": "wolf",
+      "action": "eats",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m022",
+      "agent": "wolf",
+      "action": "eats",
+      "patient": "river",
+      "tense": "past"
+    },
+    {
+      "id": "m026",
+      "agent": "wolf",
+      "action": "fears",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m027",
+      "agent": "wolf",
+      "action": "fears",
+      "patient": "child",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m029",
+      "agent": "wolf",
+      "action": "fears",
+      "patient": "stone",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m030",
+      "agent": "wolf",
+      "action": "fears",
+      "patient": "river",
+      "tense": "past"
+    },
+    {
+      "id": "m031",
+      "agent": "wolf",
+      "action": "fears",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m032",
+      "agent": "wolf",
+      "action": "finds",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m033",
+      "agent": "wolf",
+      "action": "finds",
+      "patient": "bird",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m036",
+      "agent": "wolf",
+      "action": "finds",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m037",
+      "agent": "wolf",
+      "action": "finds",
+      "patient": "stone",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m038",
+      "agent": "wolf",
+      "action": "finds",
+      "patient": "river",
+      "tense": "past"
+    },
+    {
+      "id": "m039",
+      "agent": "wolf",
+      "action": "finds",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m040",
+      "agent": "bird",
+      "action": "sees",
+      "patient": "wolf",
+      "tense": "past"
+    },
+    {
+      "id": "m045",
+      "agent": "bird",
+      "action": "sees",
+      "patient": "stone",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m048",
+      "agent": "bird",
+      "action": "chases",
+      "patient": "wolf",
+      "tense": "past"
+    },
+    {
+      "id": "m053",
+      "agent": "bird",
+      "action": "chases",
+      "patient": "stone",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m062",
+      "agent": "bird",
+      "action": "eats",
+      "patient": "river",
+      "tense": "past"
+    },
+    {
+      "id": "m065",
+      "agent": "bird",
+      "action": "fears",
+      "patient": "wolf",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m066",
+      "agent": "bird",
+      "action": "fears",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m067",
+      "agent": "bird",
+      "action": "fears",
+      "patient": "child",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m068",
+      "agent": "bird",
+      "action": "fears",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m070",
+      "agent": "bird",
+      "action": "fears",
+      "patient": "river",
+      "tense": "past"
+    },
+    {
+      "id": "m073",
+      "agent": "bird",
+      "action": "finds",
+      "patient": "wolf",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m076",
+      "agent": "bird",
+      "action": "finds",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m077",
+      "agent": "bird",
+      "action": "finds",
+      "patient": "stone",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m078",
+      "agent": "bird",
+      "action": "finds",
+      "patient": "river",
+      "tense": "past"
+    },
+    {
+      "id": "m082",
+      "agent": "child",
+      "action": "sees",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m083",
+      "agent": "child",
+      "action": "sees",
+      "patient": "bird",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m084",
+      "agent": "child",
+      "action": "sees",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m085",
+      "agent": "child",
+      "action": "sees",
+      "patient": "stone",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m086",
+      "agent": "child",
+      "action": "sees",
+      "patient": "river",
+      "tense": "past"
+    },
+    {
+      "id": "m087",
+      "agent": "child",
+      "action": "sees",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m089",
+      "agent": "child",
+      "action": "chases",
+      "patient": "wolf",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m091",
+      "agent": "child",
+      "action": "chases",
+      "patient": "bird",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m095",
+      "agent": "child",
+      "action": "chases",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m100",
+      "agent": "child",
+      "action": "eats",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m103",
+      "agent": "child",
+      "action": "eats",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m104",
+      "agent": "child",
+      "action": "fears",
+      "patient": "wolf",
+      "tense": "past"
+    },
+    {
+      "id": "m106",
+      "agent": "child",
+      "action": "fears",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m113",
+      "agent": "child",
+      "action": "finds",
+      "patient": "wolf",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m115",
+      "agent": "child",
+      "action": "finds",
+      "patient": "bird",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m116",
+      "agent": "child",
+      "action": "finds",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m119",
+      "agent": "child",
+      "action": "finds",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m120",
+      "agent": "stone",
+      "action": "sees",
+      "patient": "wolf",
+      "tense": "past"
+    },
+    {
+      "id": "m124",
+      "agent": "stone",
+      "action": "sees",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m128",
+      "agent": "stone",
+      "action": "chases",
+      "patient": "wolf",
+      "tense": "past"
+    },
+    {
+      "id": "m131",
+      "agent": "stone",
+      "action": "chases",
+      "patient": "bird",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m132",
+      "agent": "stone",
+      "action": "chases",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m136",
+      "agent": "stone",
+      "action": "eats",
+      "patient": "wolf",
+      "tense": "past"
+    },
+    {
+      "id": "m138",
+      "agent": "stone",
+      "action": "eats",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m143",
+      "agent": "stone",
+      "action": "eats",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m151",
+      "agent": "stone",
+      "action": "fears",
+      "patient": "river",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m154",
+      "agent": "stone",
+      "action": "finds",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m156",
+      "agent": "stone",
+      "action": "finds",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m157",
+      "agent": "stone",
+      "action": "finds",
+      "patient": "child",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m162",
+      "agent": "river",
+      "action": "sees",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m166",
+      "agent": "river",
+      "action": "sees",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m168",
+      "agent": "river",
+      "action": "chases",
+      "patient": "wolf",
+      "tense": "past"
+    },
+    {
+      "id": "m172",
+      "agent": "river",
+      "action": "chases",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m173",
+      "agent": "river",
+      "action": "chases",
+      "patient": "child",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m180",
+      "agent": "river",
+      "action": "eats",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m181",
+      "agent": "river",
+      "action": "eats",
+      "patient": "child",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m182",
+      "agent": "river",
+      "action": "eats",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m183",
+      "agent": "river",
+      "action": "eats",
+      "patient": "stone",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m186",
+      "agent": "river",
+      "action": "fears",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m193",
+      "agent": "river",
+      "action": "finds",
+      "patient": "wolf",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m194",
+      "agent": "river",
+      "action": "finds",
+      "patient": "bird",
+      "tense": "past"
+    },
+    {
+      "id": "m195",
+      "agent": "river",
+      "action": "finds",
+      "patient": "bird",
+      "tense": "nonpast"
+    },
+    {
+      "id": "m196",
+      "agent": "river",
+      "action": "finds",
+      "patient": "child",
+      "tense": "past"
+    },
+    {
+      "id": "m198",
+      "agent": "river",
+      "action": "finds",
+      "patient": "stone",
+      "tense": "past"
+    },
+    {
+      "id": "m199",
+      "agent": "river",
+      "action": "finds",
+      "patient": "stone",
+      "tense": "nonpast"
+    }
+  ]
+}
