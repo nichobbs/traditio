@@ -147,3 +147,16 @@ npm run report
 ```
 
 Check `metrics/timeseries.json` for the trajectory.
+
+## Run 2
+
+Run 2 tests a presentation confound found in run 1 and then adds a communicative pressure. See `docs/run2-design.md` for the design and predictions, and `docs/white-paper.md` for run 1.
+
+```bash
+npm run build
+npm run run2 -- estimate
+npm run run2 -- run --phase 1
+npm run run2 -- report
+```
+
+Output goes to `runs/<condition>/chain-NN/gen-NNN/`. Configuration is in `config/run2.json`.

@@ -13,7 +13,8 @@
     "generation": "node dist/cli.js",
     "report": "node dist/report.js",
     "clean": "rm -rf dist corpus/gen-??? corpus/gen-????",
-    "pregeneration": "npm run build"
+    "pregeneration": "npm run build",
+    "run2": "node dist/run2/cli.js"
   },
   "keywords": [
     "language",

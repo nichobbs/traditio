@@ -1,8 +1,8 @@
 import type { Agent, Action, Meaning, Tense } from './types.js';
 
-const AGENTS: Agent[] = ['wolf', 'bird', 'child', 'stone', 'river'];
-const ACTIONS: Action[] = ['sees', 'chases', 'eats', 'fears', 'finds'];
-const TENSES: Tense[] = ['past', 'nonpast'];
+export const AGENTS: Agent[] = ['wolf', 'bird', 'child', 'stone', 'river'];
+export const ACTIONS: Action[] = ['sees', 'chases', 'eats', 'fears', 'finds'];
+export const TENSES: Tense[] = ['past', 'nonpast'];
 
 export function generateMeanings(): Meaning[] {
   const meanings: Meaning[] = [];

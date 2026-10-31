@@ -25,7 +25,7 @@ function levenshteinDistance(a: string, b: string): number {
   return dp[m][n];
 }
 
-function normalizedLevenshtein(a: string, b: string): number {
+export function normalizedLevenshtein(a: string, b: string): number {
   const distance = levenshteinDistance(a, b);
   const maxLen = Math.max(a.length, b.length);
   return maxLen === 0 ? 0 : distance / maxLen;
