@@ -1,0 +1,109 @@
+{
+  "baseSeed": 4242,
+  "defaults": {
+    "model": "claude-haiku-4-5-20251001",
+    "maxOutputTokens": 8000,
+    "temperature": 1.0,
+    "listenerTemperature": 0,
+    "sampleFraction": 0.4,
+    "maxTrainingTokens": 4000,
+    "maxGenerations": 60,
+    "stasisWindow": 8,
+    "stasisEpsilon": 0.002,
+    "chains": 5,
+    "testItems": 60,
+    "confusionsShown": 30,
+    "postTest": true,
+    "concurrency": 4
+  },
+  "conditions": [
+    {
+      "name": "p1-ids",
+      "phase": 1,
+      "description": "Run 1 presentation (examples carry meaning IDs only), new seeds. Replicates the baseline and shows whether run 1 was typical.",
+      "presentation": "ids",
+      "pressure": "none",
+      "chains": 4
+    },
+    {
+      "name": "p1-inline",
+      "phase": 1,
+      "description": "Examples carry their meaning fields. Removes the ID-join confound.",
+      "presentation": "inline",
+      "pressure": "none"
+    },
+    {
+      "name": "p1-inline-shuffled",
+      "phase": 1,
+      "description": "Inline examples, targets shuffled per call, opaque IDs. Removes enumeration-order structure entirely. Default clean baseline for later phases.",
+      "presentation": "inline-shuffled",
+      "pressure": "none"
+    },
+    {
+      "name": "p2-framing",
+      "phase": 2,
+      "description": "Clean baseline plus a statement that a partner must decode the forms. Told, but no feedback.",
+      "presentation": "inline-shuffled",
+      "pressure": "framing"
+    },
+    {
+      "name": "p2-game",
+      "phase": 2,
+      "description": "Clean baseline plus a speaker/listener game with revision from the listener's mistakes.",
+      "presentation": "inline-shuffled",
+      "pressure": "game",
+      "chains": 4,
+      "maxGenerations": 40
+    },
+    {
+      "name": "p3-action-first",
+      "phase": 3,
+      "description": "Field order action, agent, patient, tense. Tests position as the cause of which dimension drops.",
+      "presentation": "inline-shuffled",
+      "pressure": "none",
+      "fieldOrder": ["action", "agent", "patient", "tense"],
+      "chains": 4,
+      "maxGenerations": 50
+    },
+    {
+      "name": "p3-action-last",
+      "phase": 3,
+      "description": "Field order agent, patient, tense, action.",
+      "presentation": "inline-shuffled",
+      "pressure": "none",
+      "fieldOrder": ["agent", "patient", "tense", "action"],
+      "chains": 4,
+      "maxGenerations": 50
+    },
+    {
+      "name": "p3-nonsense-actions",
+      "phase": 3,
+      "description": "Action words replaced by meaningless tokens. Tests semantic salience as the cause of which dimension drops.",
+      "presentation": "inline-shuffled",
+      "pressure": "none",
+      "actionLabels": ["vorn", "kelp", "dast", "zimo", "brul"],
+      "chains": 4,
+      "maxGenerations": 50
+    },
+    {
+      "name": "p3-sonnet-none",
+      "phase": 3,
+      "description": "Clean baseline with a larger model.",
+      "presentation": "inline-shuffled",
+      "pressure": "none",
+      "model": "claude-sonnet-5-5",
+      "chains": 3,
+      "maxGenerations": 50
+    },
+    {
+      "name": "p3-sonnet-game",
+      "phase": 3,
+      "description": "Game condition with a larger model.",
+      "presentation": "inline-shuffled",
+      "pressure": "game",
+      "model": "claude-sonnet-5-5",
+      "chains": 3,
+      "maxGenerations": 40
+    }
+  ]
+}

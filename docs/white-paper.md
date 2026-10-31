@@ -2,7 +2,7 @@
 
 **Traditio experiment, run 1 (generations 0 to 210)**
 
-Status: internal technical report. Findings are from a single chain, a single model and a single seed, and should be read as a pilot.
+Status: internal technical report. Findings are from a single chain, a single model and a single seed, and should be read as a pilot. A presentation artefact in the learner prompt (Section 2.2) was found after the first draft and is a leading explanation for the central finding, so the conclusions below are provisional until run 2 tests it.
 
 ---
 
@@ -29,7 +29,8 @@ Traditio asks what structure an LLM learner induces, and how fast, when placed i
 ### 2.2 Transmission
 
 - Generation 0 is a seeded random holistic language: 2 to 4 CV syllables per meaning, with no relation between form and meaning.
-- At generation N, a fresh learner receives 80 pairs (`sampleFraction` 0.4, resampled each generation with seed `config.seed + N`), shows only the meaning-form examples, and is asked to express all 200 meanings. It is told only that the language is "not related to any human language".
+- At generation N, a fresh learner receives 80 pairs (`sampleFraction` 0.4, resampled each generation with seed `config.seed + N`) and is asked to express all 200 meanings. It is told only that the language is "not related to any human language".
+- **Presentation detail that matters.** The 80 training examples are rendered as `{"meaningId": "m082", "form": "chijemelo"}` and nothing else. The meaning fields (agent, action, patient, tense) appear only in the target list, which is in canonical enumeration order, so the learner must join examples to meanings by ID. The template text says each example has the shape `{"agent": ..., "action": ...} -> "form"`, which does not match what is rendered. The IDs themselves encode structure (`id = ((agent*5 + action)*4 + patient)*2 + tense`), so tense changes every ID, patient every 2, action every 8 and agent every 40.
 - There is no memory across generations, no feedback and no communicative task. Invalid output is retried once with a correction note, then the run aborts.
 - Configuration: `claude-haiku-4-5-20251001`, temperature 1.0, max 8000 output tokens, seed 42.
 
@@ -90,7 +91,7 @@ What it does not support:
 
 - That Haiku has any particular preference for dropping actions. One chain cannot separate a model prior from a chance event early in the run.
 - That the 40-form language is a general attractor for LLM learners. We have not tested another model, seed, bottleneck or meaning space.
-- Why action collapsed. Candidate explanations that this run cannot discriminate between: (a) action is the middle field in the prompt's JSON ordering and in the learner's output; (b) agent and patient share a vocabulary and so reinforce each other as reusable nouns; (c) the five action words are semantically less salient to the learner than the role-bearing entities; (d) the binary tense and the five-valued agent and patient are easier to mark than a five-valued action sandwiched between them; (e) early random drift in generations 15 to 25 favoured action-merging and positive feedback locked it in. These are hypotheses.
+- Why action collapsed. Candidate explanations that this run cannot discriminate between: (a) action is the middle field in the prompt's JSON ordering and in the learner's output; (b) agent and patient share a vocabulary and so reinforce each other as reusable nouns; (c) the five action words are semantically less salient to the learner than the role-bearing entities; (d) the binary tense and the five-valued agent and patient are easier to mark than a five-valued action sandwiched between them; (e) early random drift in generations 15 to 25 favoured action-merging and positive feedback locked it in; (f) the ID-join presentation of Section 2.2: a language that depends on `id mod 8` (patient and tense) and `floor(id / 40)` (agent) and ignores `floor(id / 8) mod 5` (action) is exactly the periodic pattern a learner would find by reading IDs, without ever reading the meaning fields. (f) is the cheapest to test and, if true, would make the action collapse an artefact of the prompt. These are hypotheses.
 
 Known weaknesses of the current design:
 
@@ -98,7 +99,8 @@ Known weaknesses of the current design:
 2. **Single chain.** n = 1 for every claim above.
 3. **Blind metrics.** None of the existing metrics detects syncretism. A language that stopped distinguishing actions improved on every metric.
 4. **No stopping rule.** About 166 generations were spent reproducing an identical language.
-5. **Small, uniform meaning space.** All meanings are equally frequent, and the dimensions are few and low-cardinality. This limits what structure can emerge and what can be learned about learner biases.
+5. **Prompt presentation mismatch.** Training examples carry only meaning IDs, and the IDs encode the meaning structure (Section 2.2). This confounds "the learner induced structure from meanings" with "the learner read structure from the numbering".
+6. **Small, uniform meaning space.** All meanings are equally frequent, and the dimensions are few and low-cardinality. This limits what structure can emerge and what can be learned about learner biases.
 
 ## 5. Should the meaning space be larger than 200?
 
@@ -190,6 +192,10 @@ Hierarchical meanings, Zipfian frequency and varied cardinalities (Section 5), p
 
 ### 8.6 Suggested order of work
 
+A concrete design for steps 0 to 5 is in `docs/run2-design.md`.
+
+
+0. Test the presentation artefact of Section 2.2: run the baseline with IDs only, with inline meanings in the examples, and with inline meanings plus shuffled, opaque IDs. Nothing else in this list should be interpreted until this is known.
 1. Add the metrics and stopping rule (no cost, makes everything else interpretable).
 2. Run the prompt-ordering and label-ablation experiments to explain the action collapse.
 3. Replicate the baseline over 10 seeds and test the bottleneck fraction and temperature sweeps.
@@ -206,7 +212,7 @@ Hierarchical meanings, Zipfian frequency and varied cardinalities (Section 5), p
 
 ## 10. Conclusion
 
-The experiment reached stasis at generation 44. Within that time it reproduced a known effect: transmission through a bottleneck turns a holistic language into a regular one, and without a pressure for communication it also discards distinctions, here the entire action dimension. The run does not yet say anything about LLMs that was not predicted by the theory, and it cannot say whether the choice of dropped dimension is a property of the model. The extensions that change this are the introduction of a communicative pressure, replication across seeds and models, and an analysis of which structures each model's prior favours.
+The experiment reached stasis at generation 44. Within that time it reproduced a known effect: transmission through a bottleneck turns a holistic language into a regular one, and without a pressure for communication it also discards distinctions, here the entire action dimension. The run does not yet say anything about LLMs that was not predicted by the theory, and it cannot say whether the choice of dropped dimension is a property of the model or an artefact of presenting meaning IDs that encode the enumeration order. The extensions that change this are the introduction of a communicative pressure, replication across seeds and models, and an analysis of which structures each model's prior favours.
 
 ## Appendix A: Reproducing the analysis
 
